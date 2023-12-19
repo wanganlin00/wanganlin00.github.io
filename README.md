@@ -1,3 +1,2 @@
-I am interested in sing-cell sequencing,bioinformatics and oncology radiotherapy.
-I'd like to create a website to store my notes,but I don't know how to do it.
+This is my website to store my notes.
 Contact me：wanganlin00@outlook.com
