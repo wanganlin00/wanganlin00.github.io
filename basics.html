@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>basics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+<script src="basics_files/libs/clipboard/clipboard.min.js"></script>
+<script src="basics_files/libs/quarto-html/quarto.js"></script>
+<script src="basics_files/libs/quarto-html/popper.min.js"></script>
+<script src="basics_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="basics_files/libs/quarto-html/anchor.min.js"></script>
+<link href="basics_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="basics_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="basics_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="basics_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="basics_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+</head>
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content"><div class="quarto-title-block"><div class="quarto-title-tools-only"><h1></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div><section id="base-r" class="level1 unnumbered"><h1 class="unnumbered">base R</h1>
+</section><section id="最重要的是帮助文档" class="level1"><h1>最重要的是帮助文档</h1>
+<p>The Comprehensive R Archive Network <a href="https://cran.r-project.org/">CRAN</a></p>
+<div class="cell">
+<details><summary>Code</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/help.start.html">help.start</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/help.html">help</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="op">?</span><span class="va">c</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section><section id="包的安装和使用" class="level1"><h1>包的安装和使用</h1>
+<div class="cell">
+<details><summary>Code</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/installed.packages.html">installed.packages</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"ggplot2"</span><span class="op">)</span> </span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span> <span class="co"># 载入包</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span> <span class="co"># 另一种载入方式</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/help.html">help</a></span><span class="op">(</span>package <span class="op">=</span> <span class="st">"ggplot2"</span><span class="op">)</span> <span class="co"># R包ggplot2的帮助文档</span></span>
+<span><span class="op">?</span><span class="va">ggplot2</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span>package<span class="op">=</span><span class="st">"ggplot2"</span><span class="op">)</span>   <span class="co">#查看R包ggplot2中的数据集</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="va">mpg</span>,package<span class="op">=</span><span class="st">"ggplot2"</span><span class="op">)</span>  <span class="co">#加载数据集</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/help.html">help</a></span><span class="op">(</span><span class="va">mpg</span><span class="op">)</span> <span class="co"># 数据集mpg的帮助文档</span></span>
+<span><span class="op">?</span><span class="va">mpg</span></span>
+<span><span class="va">mpg</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section><section id="变量类型" class="level1"><h1>变量类型</h1>
+<p><strong>数据类型（mode）</strong>：表示对象在计算机内存中的存储类型</p>
+<ul>
+<li><strong>numeric – 数值型（Integer/double）integer – 整型 L</strong></li>
+</ul>
+<p>::: {.cell}</p>
+<details><summary>Code</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="fl">4.3</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "numeric"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="fl">4.3</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "numeric"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="fl">1L</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "numeric"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="fl">1L</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "integer"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><p>:::</p>
+<ul>
+<li><strong>character – 字符型</strong></li>
+</ul>
+<p>::: {.cell}</p>
+<details><summary>Code</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"car"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "character"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="st">"car"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "character"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><p>:::</p>
+<ul>
+<li><strong>logical –逻辑型</strong></li>
+</ul>
+<p>::: {.cell}</p>
+<details><summary>Code</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="cn">TRUE</span>,<span class="cn">FALSE</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "logical"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="cn">TRUE</span>,<span class="cn">FALSE</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "logical"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><p>:::</p>
+<ul>
+<li><strong>factor–因子</strong></li>
+</ul>
+<p>::: {.cell}</p>
+<details><summary>Code</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> </span>
+<span><span class="co">#&gt; [1] "numeric"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> </span>
+<span><span class="co">#&gt; [1] "factor"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><p>:::</p>
+<ul>
+<li><strong>date/datetime–日期/日期时间</strong></li>
+</ul>
+<p>默认格式：<code>"%Y-%m-%d" xxxx-xx-xx,例如：2023-03-15</code></p>
+<div class="cell">
+<details><summary>Code</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span><span class="op">(</span><span class="st">"2023-12-11"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "numeric"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span><span class="op">(</span><span class="st">"2023-12-11"</span><span class="op">)</span><span class="op">)</span> </span>
+<span><span class="co">#&gt; [1] "Date"</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.Date</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "2023-12-19"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"02 14-2002"</span>,<span class="st">"01 04-2013"</span><span class="op">)</span>,<span class="st">"%m %d-%Y"</span><span class="op">)</span> <span class="co">#以"%m %d-%Y"格式读入</span></span>
+<span><span class="co">#&gt; [1] "2002-02-14" "2013-01-04"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/format.html">format</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>,<span class="st">"%Y/%m/%d"</span><span class="op">)</span> <span class="co">#以"%Y/%m/%d"格式输出</span></span>
+<span><span class="co">#&gt; [1] "2023/12/19"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<ul>
+<li><strong>function–函数</strong></li>
+</ul>
+<p>::: {.cell}</p>
+<details><summary>Code</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="va">c</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "function"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">c</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "function"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><p>:::</p>
+<ul>
+<li><strong>list–列表</strong></li>
+</ul>
+<p>::: {.cell}</p>
+<details><summary>Code</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="va">mpg</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "list"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">mpg</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "tbl_df"     "tbl"        "data.frame"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><p>:::</p>
+<ul>
+<li><strong>complex – 复数型</strong></li>
+</ul>
+<p>::: {.cell}</p>
+<details><summary>Code</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">+</span><span class="fl">2i</span>,<span class="fl">3</span><span class="op">-</span><span class="fl">4i</span><span class="op">)</span><span class="op">)</span> </span>
+<span><span class="co">#&gt; [1] "complex"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">+</span><span class="fl">2i</span>,<span class="fl">3</span><span class="op">-</span><span class="fl">4i</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "complex"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><p>:::</p>
+<ul>
+<li><strong>raw–原始型</strong></li>
+</ul>
+<p>::: {.cell}</p>
+<details><summary>Code</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/rawConversion.html">charToRaw</a></span><span class="op">(</span><span class="st">"abcde12345"</span><span class="op">)</span> <span class="co">#字符串中每个字符的原始存储格式（十六进制？）</span></span>
+<span><span class="co">#&gt;  [1] 61 62 63 64 65 31 32 33 34 35</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/mode.html">mode</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rawConversion.html">charToRaw</a></span><span class="op">(</span><span class="st">"abcde12345"</span><span class="op">)</span><span class="op">)</span> </span>
+<span><span class="co">#&gt; [1] "raw"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rawConversion.html">charToRaw</a></span><span class="op">(</span><span class="st">"abcde12345"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "raw"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><p>:::</p>
+</section><section id="数据结构" class="level1"><h1>数据结构</h1>
+<p><strong>数据结构(class)</strong>：是一种基于<em>面向对象</em>的R的抽象类型划分,或者理解为一种数据结构。</p>
+<ul>
+<li>
+<strong>vector –向量</strong>，同一类元素的集合。</li>
+</ul>
+<p><code><a href="https://rdrr.io/r/base/c.html">?c      #Combine Values into a Vector or List</a></code></p>
+<div class="cell">
+<details><summary>Code</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#单元素向量</span></span>
+<span><span class="fl">1</span></span>
+<span><span class="co">#&gt; [1] 1</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/vector.html">is.vector</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] TRUE</span></span>
+<span></span>
+<span><span class="st">"a"</span></span>
+<span><span class="co">#&gt; [1] "a"</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/vector.html">is.vector</a></span><span class="op">(</span><span class="st">"a"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] TRUE</span></span>
+<span></span>
+<span><span class="co">#使用函数c()创建向量</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] 1</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span>,<span class="fl">4</span>,<span class="fl">5</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] 1 2 3 4 5</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"b"</span>,<span class="st">"c"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "a" "b" "c"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<ul>
+<li>
+<strong>factor –因子</strong>，分类变量，其中每个级别都是一类。</li>
+</ul>
+<p><code><a href="https://rdrr.io/r/base/factor.html">?factor</a></code></p>
+<p><code>factor(vector,order=FALSE,levels=c(v1,v2,…),labels= ,...)</code> ，在内存中以整数<code>c(1,2,3,...,k)</code>形式存储。</p>
+<div class="cell">
+<details><summary>Code</summary><div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#类别（名义型）变量</span></span>
+<span><span class="va">diabetes</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"t1"</span>,<span class="st">"t2"</span>,<span class="st">"t1"</span>,<span class="st">"t1"</span><span class="op">)</span> </span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">diabetes</span><span class="op">)</span></span>
+<span><span class="co">#&gt;  chr [1:4] "t1" "t2" "t1" "t1"</span></span>
+<span><span class="va">diabetes</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">diabetes</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">diabetes</span><span class="op">)</span></span>
+<span><span class="co">#&gt;  Factor w/ 2 levels "t1","t2": 1 2 1 1</span></span>
+<span></span>
+<span></span>
+<span><span class="co">#有序型变量     默认水平根据字母顺序而定</span></span>
+<span><span class="va">status</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"poor"</span>,<span class="st">"better"</span>,<span class="st">"best"</span>,<span class="st">"poor"</span><span class="op">)</span></span>
+<span><span class="va">status</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">status</span>,order<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span> </span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">status</span><span class="op">)</span> </span>
+<span><span class="co">#&gt;  Ord.factor w/ 3 levels "best"&lt;"better"&lt;..: 3 2 1 3</span></span>
+<span><span class="va">status</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">status</span>,order<span class="op">=</span><span class="cn">TRUE</span>,levels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"poor"</span>,<span class="st">"better"</span>,<span class="st">"best"</span><span class="op">)</span><span class="op">)</span> </span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">status</span><span class="op">)</span> </span>
+<span><span class="co">#&gt;  Ord.factor w/ 3 levels "poor"&lt;"better"&lt;..: 1 2 3 1</span></span>
+<span></span>
+<span><span class="co">#改变外在标签</span></span>
+<span><span class="va">sex</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">2</span>,<span class="fl">1</span><span class="op">)</span></span>
+<span><span class="va">sex</span></span>
+<span><span class="co">#&gt; [1] 1 2 2 1</span></span>
+<span><span class="va">sex</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">sex</span>,levels<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span>,labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"男"</span>,<span class="st">"女"</span><span class="op">)</span><span class="op">)</span> </span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">sex</span><span class="op">)</span> </span>
+<span><span class="co">#&gt;  Factor w/ 2 levels "男","女": 1 2 2 1</span></span>
+<span><span class="va">sex</span></span>
+<span><span class="co">#&gt; [1] 男 女 女 男</span></span>
+<span><span class="co">#&gt; Levels: 男 女</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<ul>
+<li>
+<strong>matrix –矩阵</strong>，所有元素必须是同一类型。</li>
+</ul>
+<p><code><a href="https://rdrr.io/r/base/matrix.html">?matrix</a></code></p>
+<p><code>matrix(data= ,nrow=1 ,ncol=1 ,byrow=FALSE ,dimnames=list(rnames,cnames) ,...)</code></p>
+<div class="cell">
+<details><summary>Code</summary><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">num</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">16</span>,<span class="fl">22</span>,<span class="fl">24</span>,<span class="fl">28</span><span class="op">)</span></span>
+<span><span class="va">rnames</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"R1"</span>,<span class="st">"R2"</span><span class="op">)</span></span>
+<span><span class="va">cnames</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"C1"</span>,<span class="st">"C2"</span><span class="op">)</span></span>
+<span><span class="va">mymatrix</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">matrix</a></span><span class="op">(</span><span class="va">num</span>,nrow<span class="op">=</span><span class="fl">2</span>,ncol<span class="op">=</span><span class="fl">2</span>,byrow<span class="op">=</span><span class="cn">TRUE</span>,dimnames<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">rnames</span>,<span class="va">cnames</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">mymatrix</span>   </span>
+<span><span class="co">#&gt;    C1 C2</span></span>
+<span><span class="co">#&gt; R1 16 22</span></span>
+<span><span class="co">#&gt; R2 24 28</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<ul>
+<li>
+<strong>array–数组</strong>，所有元素必须是同一类型。</li>
+</ul>
+<p><code><a href="https://rdrr.io/r/base/array.html">?array</a></code></p>
+<p><code>array(data,dim_numeric_vector,dimnames = list(dim1,dim2,...),...)</code></p>
+<div class="cell">
+<details><summary>Code</summary><div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">v</span><span class="op">&lt;-</span><span class="fl">1</span><span class="op">:</span><span class="fl">24</span> </span>
+<span><span class="va">dim1</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"A1"</span>,<span class="st">"A2"</span>,<span class="st">"A3"</span><span class="op">)</span> </span>
+<span><span class="va">dim2</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"B1"</span>,<span class="st">"B2"</span>,<span class="st">"B3"</span>,<span class="st">"B4"</span><span class="op">)</span></span>
+<span><span class="va">dim3</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"C1"</span>,<span class="st">"C2"</span><span class="op">)</span> </span>
+<span><span class="va">myarray</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/array.html">array</a></span><span class="op">(</span><span class="va">v</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">3</span>,<span class="fl">4</span>,<span class="fl">2</span><span class="op">)</span>,dimnames <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">dim1</span>,<span class="va">dim2</span>,<span class="va">dim3</span><span class="op">)</span><span class="op">)</span> </span>
+<span><span class="va">myarray</span></span>
+<span><span class="co">#&gt; , , C1</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;    B1 B2 B3 B4</span></span>
+<span><span class="co">#&gt; A1  1  4  7 10</span></span>
+<span><span class="co">#&gt; A2  2  5  8 11</span></span>
+<span><span class="co">#&gt; A3  3  6  9 12</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; , , C2</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;    B1 B2 B3 B4</span></span>
+<span><span class="co">#&gt; A1 13 16 19 22</span></span>
+<span><span class="co">#&gt; A2 14 17 20 23</span></span>
+<span><span class="co">#&gt; A3 15 18 21 24</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<ul>
+<li>
+<strong>data.frame/tibble– 数据框</strong>， 由列向量组成，每一列元素必须是同一类型，列与列之间长度必须相同，但类型可以不同。</li>
+</ul>
+<p><code><a href="https://rdrr.io/r/base/data.frame.html">?data.frame</a></code></p>
+<p><code>data.frame(name1=col1,name2=col2,...,row.names = ,...)</code></p>
+<p><code>?tibble</code>，<code>tibble()</code>是tidyverse风格的数据框，用法类似。</p>
+<div class="cell">
+<details><summary>Code</summary><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">id</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span>,<span class="fl">4</span><span class="op">)</span> </span>
+<span><span class="va">age</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">21</span>,<span class="fl">14</span>,<span class="fl">52</span>,<span class="fl">15</span><span class="op">)</span> </span>
+<span><span class="va">diabetes</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"t1"</span>,<span class="st">"t2"</span>,<span class="st">"t1"</span>,<span class="st">"t1"</span><span class="op">)</span> </span>
+<span><span class="va">status</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"poor"</span>,<span class="st">"better"</span>,<span class="st">"best"</span>,<span class="st">"poor"</span><span class="op">)</span> </span>
+<span><span class="va">patient</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>patientID<span class="op">=</span><span class="va">id</span>,<span class="va">age</span>,<span class="va">diabetes</span>,<span class="va">status</span>,row.names <span class="op">=</span> <span class="va">id</span><span class="op">)</span> <span class="co"># 4个列向量组成数据框 </span></span>
+<span><span class="va">patient</span></span>
+<span><span class="co">#&gt;   patientID age diabetes status</span></span>
+<span><span class="co">#&gt; 1         1  21       t1   poor</span></span>
+<span><span class="co">#&gt; 2         2  14       t2 better</span></span>
+<span><span class="co">#&gt; 3         3  52       t1   best</span></span>
+<span><span class="co">#&gt; 4         4  15       t1   poor</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>list –列表，由以上各种数据结构组成</p>
+<p><code><a href="https://rdrr.io/r/base/list.html">?list</a></code></p>
+<p><code>list(name1=object1,name2=object2,...)</code></p>
+<div class="cell">
+<details><summary>Code</summary><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mylist</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>title<span class="op">=</span><span class="st">"My list"</span>,</span>
+<span>             matr<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"a1"</span>,<span class="st">"b1"</span>,<span class="st">"a2"</span>,<span class="st">"b2"</span><span class="op">)</span>,nrow<span class="op">=</span><span class="fl">2</span>,ncol<span class="op">=</span><span class="fl">2</span>,byrow<span class="op">=</span><span class="cn">TRUE</span>,</span>
+<span>                         dimnames <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"X1"</span>,<span class="st">"X2"</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Y1"</span>,<span class="st">"Y2"</span><span class="op">)</span><span class="op">)</span></span>
+<span>             <span class="op">)</span>,</span>
+<span>             df<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>id<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Lisa"</span>,<span class="st">"BOb"</span>,<span class="st">"John"</span>,<span class="st">"Jule"</span><span class="op">)</span>,</span>
+<span>                                     nrow<span class="op">=</span><span class="fl">4</span>,ncol<span class="op">=</span><span class="fl">1</span>,byrow<span class="op">=</span><span class="cn">TRUE</span></span>
+<span>             <span class="op">)</span>,</span>
+<span>             int<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">3</span>,<span class="fl">5</span>,<span class="fl">7</span>,<span class="fl">9</span><span class="op">)</span>,</span>
+<span>             TF<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="cn">T</span>,<span class="cn">T</span>,<span class="cn">T</span>,<span class="cn">F</span><span class="op">)</span></span>
+<span>             <span class="op">)</span>,</span>
+<span>             list<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>a<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span><span class="op">)</span>,b<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"A"</span>,<span class="st">"B"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="op">)</span></span>
+<span><span class="va">mylist</span></span>
+<span><span class="co">#&gt; $title</span></span>
+<span><span class="co">#&gt; [1] "My list"</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $matr</span></span>
+<span><span class="co">#&gt;    Y1   Y2  </span></span>
+<span><span class="co">#&gt; X1 "a1" "b1"</span></span>
+<span><span class="co">#&gt; X2 "a2" "b2"</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $df</span></span>
+<span><span class="co">#&gt;     id int    TF</span></span>
+<span><span class="co">#&gt; 1 Lisa   3  TRUE</span></span>
+<span><span class="co">#&gt; 2  BOb   5  TRUE</span></span>
+<span><span class="co">#&gt; 3 John   7  TRUE</span></span>
+<span><span class="co">#&gt; 4 Jule   9 FALSE</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $list</span></span>
+<span><span class="co">#&gt; $list$a</span></span>
+<span><span class="co">#&gt; [1] 1 2 3</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $list$b</span></span>
+<span><span class="co">#&gt; [1] "A" "B"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section><section id="qmd_format" class="level1"><h1>qmd_format</h1>
+<table class="table"><tbody>
+<tr class="odd">
+<td>输出</td>
+<td>语法</td>
+</tr>
+<tr class="even">
+<td><code>code</code></td>
+<td>`<code>code</code>`</td>
+</tr>
+<tr class="odd">
+<td><strong>粗体</strong></td>
+<td><code>**粗体**</code></td>
+</tr>
+<tr class="even">
+<td><em>斜体</em></td>
+<td><code>*斜体*</code></td>
+</tr>
+<tr class="odd">
+<td><u>下横线</u></td>
+<td><code>[下横线]{.underline}</code></td>
+</tr>
+<tr class="even">
+<td><del>删除线</del></td>
+<td><code>~~删除线~~</code></td>
+</tr>
+<tr class="odd">
+<td>上标X<sup>2</sup>
+</td>
+<td><code>X^2^</code></td>
+</tr>
+<tr class="even">
+<td>下标 X<sub>1</sub>
+</td>
+<td><code>X~1~</code></td>
+</tr>
+<tr class="odd">
+<td><span class="smallcaps">SAMALL small caps</span></td>
+<td>与小写字母同等高度的大写字母 <code>[small caps]{.smallcaps}</code>
+</td>
+</tr>
+<tr class="even">
+<td><a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a></td>
+<td><code>&lt;https://r4ds.hadley.nz/&gt;</code></td>
+</tr>
+<tr class="odd">
+<td><a href="https://quarto.org">quarto</a></td>
+<td><code>[quarto](https://quarto.org)</code></td>
+</tr>
+<tr class="even">
+<td><img src="images/whole-game.png" class="img-fluid" alt="data science"></td>
+<td><code>![data science](images/whole-game.png)</code></td>
+</tr>
+</tbody></table>
+<!-- -->
+</section></main><!-- /main column --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb18" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co">  knitr:</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co">    opts_chunk:</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co">      comment: "#&gt;"</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co">      collapse: true</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co">  format: </span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co">    html: </span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="co">      code-fold: true</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="co">      code-tools: true</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="co">      code-link: true</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="fu"># base R {.unnumbered}</span></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a><span class="fu"># 最重要的是帮助文档</span></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>  The Comprehensive R Archive Network <span class="co">[</span><span class="ot">CRAN</span><span class="co">](https://cran.r-project.org/)</span></span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a><span class="in">```{r eval=FALSE}</span></span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a><span class="fu">help.start</span>()</span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>()</span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>?c</span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a><span class="fu"># 包的安装和使用</span></span>
+<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a><span class="in">```{r eval=FALSE}</span></span>
+<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a><span class="fu">installed.packages</span>()</span>
+<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>) </span>
+<span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2) <span class="co"># 载入包</span></span>
+<span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(ggplot2) <span class="co"># 另一种载入方式</span></span>
+<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(<span class="at">package =</span> <span class="st">"ggplot2"</span>) <span class="co"># R包ggplot2的帮助文档</span></span>
+<span id="cb18-33"><a href="#cb18-33" aria-hidden="true" tabindex="-1"></a>?ggplot2</span>
+<span id="cb18-34"><a href="#cb18-34" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="at">package=</span><span class="st">"ggplot2"</span>)   <span class="co">#查看R包ggplot2中的数据集</span></span>
+<span id="cb18-35"><a href="#cb18-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-36"><a href="#cb18-36" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(mpg,<span class="at">package=</span><span class="st">"ggplot2"</span>)  <span class="co">#加载数据集</span></span>
+<span id="cb18-37"><a href="#cb18-37" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(mpg) <span class="co"># 数据集mpg的帮助文档</span></span>
+<span id="cb18-38"><a href="#cb18-38" aria-hidden="true" tabindex="-1"></a>?mpg</span>
+<span id="cb18-39"><a href="#cb18-39" aria-hidden="true" tabindex="-1"></a>mpg</span>
+<span id="cb18-40"><a href="#cb18-40" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-41"><a href="#cb18-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-42"><a href="#cb18-42" aria-hidden="true" tabindex="-1"></a><span class="fu"># 变量类型</span></span>
+<span id="cb18-43"><a href="#cb18-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-44"><a href="#cb18-44" aria-hidden="true" tabindex="-1"></a>**数据类型（mode）**：表示对象在计算机内存中的存储类型</span>
+<span id="cb18-45"><a href="#cb18-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-46"><a href="#cb18-46" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**numeric -- 数值型（Integer/double）integer -- 整型 L**</span>
+<span id="cb18-47"><a href="#cb18-47" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-48"><a href="#cb18-48" aria-hidden="true" tabindex="-1"></a>  <span class="in">```{r}</span></span>
+<span id="cb18-49"><a href="#cb18-49" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(<span class="fl">4.3</span>)</span>
+<span id="cb18-50"><a href="#cb18-50" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fl">4.3</span>)</span>
+<span id="cb18-51"><a href="#cb18-51" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(1L)</span>
+<span id="cb18-52"><a href="#cb18-52" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(1L)</span>
+<span id="cb18-53"><a href="#cb18-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-54"><a href="#cb18-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-55"><a href="#cb18-55" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**character -- 字符型**</span>
+<span id="cb18-56"><a href="#cb18-56" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-57"><a href="#cb18-57" aria-hidden="true" tabindex="-1"></a>  <span class="in">```{r}</span></span>
+<span id="cb18-58"><a href="#cb18-58" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(<span class="fu">c</span>(<span class="st">"car"</span>))</span>
+<span id="cb18-59"><a href="#cb18-59" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">"car"</span>)</span>
+<span id="cb18-60"><a href="#cb18-60" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-61"><a href="#cb18-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-62"><a href="#cb18-62" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**logical --逻辑型**</span>
+<span id="cb18-63"><a href="#cb18-63" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-64"><a href="#cb18-64" aria-hidden="true" tabindex="-1"></a>  <span class="in">```{r}</span></span>
+<span id="cb18-65"><a href="#cb18-65" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(<span class="fu">c</span>(<span class="cn">TRUE</span>,<span class="cn">FALSE</span>))</span>
+<span id="cb18-66"><a href="#cb18-66" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">c</span>(<span class="cn">TRUE</span>,<span class="cn">FALSE</span>))</span>
+<span id="cb18-67"><a href="#cb18-67" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-68"><a href="#cb18-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-69"><a href="#cb18-69" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**factor--因子**</span>
+<span id="cb18-70"><a href="#cb18-70" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-71"><a href="#cb18-71" aria-hidden="true" tabindex="-1"></a>  <span class="in">```{r}</span></span>
+<span id="cb18-72"><a href="#cb18-72" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(<span class="fu">factor</span>((<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)))) </span>
+<span id="cb18-73"><a href="#cb18-73" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">factor</span>((<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)))) </span>
+<span id="cb18-74"><a href="#cb18-74" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-75"><a href="#cb18-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-76"><a href="#cb18-76" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**date/datetime--日期/日期时间**</span>
+<span id="cb18-77"><a href="#cb18-77" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-78"><a href="#cb18-78" aria-hidden="true" tabindex="-1"></a>  默认格式：<span class="in">`"%Y-%m-%d" xxxx-xx-xx,例如：2023-03-15`</span></span>
+<span id="cb18-79"><a href="#cb18-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-82"><a href="#cb18-82" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-83"><a href="#cb18-83" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(<span class="fu">as.Date</span>(<span class="st">"2023-12-11"</span>))</span>
+<span id="cb18-84"><a href="#cb18-84" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">as.Date</span>(<span class="st">"2023-12-11"</span>)) </span>
+<span id="cb18-85"><a href="#cb18-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-86"><a href="#cb18-86" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.Date</span>()</span>
+<span id="cb18-87"><a href="#cb18-87" aria-hidden="true" tabindex="-1"></a><span class="fu">as.Date</span>(<span class="fu">c</span>(<span class="st">"02 14-2002"</span>,<span class="st">"01 04-2013"</span>),<span class="st">"%m %d-%Y"</span>) <span class="co">#以"%m %d-%Y"格式读入</span></span>
+<span id="cb18-88"><a href="#cb18-88" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span>(<span class="fu">Sys.Date</span>(),<span class="st">"%Y/%m/%d"</span>) <span class="co">#以"%Y/%m/%d"格式输出</span></span>
+<span id="cb18-89"><a href="#cb18-89" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-90"><a href="#cb18-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-91"><a href="#cb18-91" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**function--函数**</span>
+<span id="cb18-92"><a href="#cb18-92" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-93"><a href="#cb18-93" aria-hidden="true" tabindex="-1"></a>  <span class="in">```{r}</span></span>
+<span id="cb18-94"><a href="#cb18-94" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(c)</span>
+<span id="cb18-95"><a href="#cb18-95" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(c)</span>
+<span id="cb18-96"><a href="#cb18-96" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-97"><a href="#cb18-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-98"><a href="#cb18-98" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**list--列表**</span>
+<span id="cb18-99"><a href="#cb18-99" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-100"><a href="#cb18-100" aria-hidden="true" tabindex="-1"></a>  <span class="in">```{r}</span></span>
+<span id="cb18-101"><a href="#cb18-101" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(mpg)</span>
+<span id="cb18-102"><a href="#cb18-102" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(mpg)</span>
+<span id="cb18-103"><a href="#cb18-103" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-104"><a href="#cb18-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-105"><a href="#cb18-105" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**complex -- 复数型**</span>
+<span id="cb18-106"><a href="#cb18-106" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-107"><a href="#cb18-107" aria-hidden="true" tabindex="-1"></a>  <span class="in">```{r}</span></span>
+<span id="cb18-108"><a href="#cb18-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-109"><a href="#cb18-109" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">+</span>2i,<span class="dv">3</span><span class="sc">-</span>4i)) </span>
+<span id="cb18-110"><a href="#cb18-110" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">+</span>2i,<span class="dv">3</span><span class="sc">-</span>4i))</span>
+<span id="cb18-111"><a href="#cb18-111" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-112"><a href="#cb18-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-113"><a href="#cb18-113" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**raw--原始型**</span>
+<span id="cb18-114"><a href="#cb18-114" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-115"><a href="#cb18-115" aria-hidden="true" tabindex="-1"></a>  <span class="in">```{r}</span></span>
+<span id="cb18-116"><a href="#cb18-116" aria-hidden="true" tabindex="-1"></a><span class="fu">charToRaw</span>(<span class="st">"abcde12345"</span>) <span class="co">#字符串中每个字符的原始存储格式（十六进制？）</span></span>
+<span id="cb18-117"><a href="#cb18-117" aria-hidden="true" tabindex="-1"></a><span class="fu">mode</span>(<span class="fu">charToRaw</span>(<span class="st">"abcde12345"</span>)) </span>
+<span id="cb18-118"><a href="#cb18-118" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fu">charToRaw</span>(<span class="st">"abcde12345"</span>))</span>
+<span id="cb18-119"><a href="#cb18-119" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-120"><a href="#cb18-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-121"><a href="#cb18-121" aria-hidden="true" tabindex="-1"></a><span class="fu"># 数据结构</span></span>
+<span id="cb18-122"><a href="#cb18-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-123"><a href="#cb18-123" aria-hidden="true" tabindex="-1"></a>**数据结构(class)**：是一种基于*面向对象*的R的抽象类型划分,或者理解为一种数据结构。</span>
+<span id="cb18-124"><a href="#cb18-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-125"><a href="#cb18-125" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**vector --向量**，同一类元素的集合。</span>
+<span id="cb18-126"><a href="#cb18-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-127"><a href="#cb18-127" aria-hidden="true" tabindex="-1"></a><span class="in">`?c      #Combine Values into a Vector or List`</span></span>
+<span id="cb18-128"><a href="#cb18-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-131"><a href="#cb18-131" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-132"><a href="#cb18-132" aria-hidden="true" tabindex="-1"></a><span class="co">#单元素向量</span></span>
+<span id="cb18-133"><a href="#cb18-133" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span></span>
+<span id="cb18-134"><a href="#cb18-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-135"><a href="#cb18-135" aria-hidden="true" tabindex="-1"></a><span class="fu">is.vector</span>(<span class="dv">1</span>)</span>
+<span id="cb18-136"><a href="#cb18-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-137"><a href="#cb18-137" aria-hidden="true" tabindex="-1"></a><span class="st">"a"</span></span>
+<span id="cb18-138"><a href="#cb18-138" aria-hidden="true" tabindex="-1"></a><span class="fu">is.vector</span>(<span class="st">"a"</span>)</span>
+<span id="cb18-139"><a href="#cb18-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-140"><a href="#cb18-140" aria-hidden="true" tabindex="-1"></a><span class="co">#使用函数c()创建向量</span></span>
+<span id="cb18-141"><a href="#cb18-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-142"><a href="#cb18-142" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">1</span>)</span>
+<span id="cb18-143"><a href="#cb18-143" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>)</span>
+<span id="cb18-144"><a href="#cb18-144" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="st">"a"</span>,<span class="st">"b"</span>,<span class="st">"c"</span>)</span>
+<span id="cb18-145"><a href="#cb18-145" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-146"><a href="#cb18-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-147"><a href="#cb18-147" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**factor --因子**，分类变量，其中每个级别都是一类。</span>
+<span id="cb18-148"><a href="#cb18-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-149"><a href="#cb18-149" aria-hidden="true" tabindex="-1"></a><span class="in">`?factor`</span></span>
+<span id="cb18-150"><a href="#cb18-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-151"><a href="#cb18-151" aria-hidden="true" tabindex="-1"></a><span class="in">`factor(vector,order=FALSE,levels=c(v1,v2,…),labels= ,...)`</span> ，在内存中以整数<span class="in">`c(1,2,3,...,k)`</span>形式存储。</span>
+<span id="cb18-152"><a href="#cb18-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-155"><a href="#cb18-155" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-156"><a href="#cb18-156" aria-hidden="true" tabindex="-1"></a><span class="co">#类别（名义型）变量</span></span>
+<span id="cb18-157"><a href="#cb18-157" aria-hidden="true" tabindex="-1"></a>diabetes<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"t1"</span>,<span class="st">"t2"</span>,<span class="st">"t1"</span>,<span class="st">"t1"</span>) </span>
+<span id="cb18-158"><a href="#cb18-158" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(diabetes)</span>
+<span id="cb18-159"><a href="#cb18-159" aria-hidden="true" tabindex="-1"></a>diabetes<span class="ot">&lt;-</span><span class="fu">factor</span>(diabetes)</span>
+<span id="cb18-160"><a href="#cb18-160" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(diabetes)</span>
+<span id="cb18-161"><a href="#cb18-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-162"><a href="#cb18-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-163"><a href="#cb18-163" aria-hidden="true" tabindex="-1"></a><span class="co">#有序型变量     默认水平根据字母顺序而定</span></span>
+<span id="cb18-164"><a href="#cb18-164" aria-hidden="true" tabindex="-1"></a>status<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"poor"</span>,<span class="st">"better"</span>,<span class="st">"best"</span>,<span class="st">"poor"</span>)</span>
+<span id="cb18-165"><a href="#cb18-165" aria-hidden="true" tabindex="-1"></a>status<span class="ot">&lt;-</span><span class="fu">factor</span>(status,<span class="at">order=</span><span class="cn">TRUE</span>) </span>
+<span id="cb18-166"><a href="#cb18-166" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(status) </span>
+<span id="cb18-167"><a href="#cb18-167" aria-hidden="true" tabindex="-1"></a>status<span class="ot">&lt;-</span><span class="fu">factor</span>(status,<span class="at">order=</span><span class="cn">TRUE</span>,<span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"poor"</span>,<span class="st">"better"</span>,<span class="st">"best"</span>)) </span>
+<span id="cb18-168"><a href="#cb18-168" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(status) </span>
+<span id="cb18-169"><a href="#cb18-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-170"><a href="#cb18-170" aria-hidden="true" tabindex="-1"></a><span class="co">#改变外在标签</span></span>
+<span id="cb18-171"><a href="#cb18-171" aria-hidden="true" tabindex="-1"></a>sex<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">1</span>)</span>
+<span id="cb18-172"><a href="#cb18-172" aria-hidden="true" tabindex="-1"></a>sex</span>
+<span id="cb18-173"><a href="#cb18-173" aria-hidden="true" tabindex="-1"></a>sex<span class="ot">&lt;-</span><span class="fu">factor</span>(sex,<span class="at">levels=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>),<span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"男"</span>,<span class="st">"女"</span>)) </span>
+<span id="cb18-174"><a href="#cb18-174" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(sex) </span>
+<span id="cb18-175"><a href="#cb18-175" aria-hidden="true" tabindex="-1"></a>sex</span>
+<span id="cb18-176"><a href="#cb18-176" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-177"><a href="#cb18-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-178"><a href="#cb18-178" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**matrix --矩阵**，所有元素必须是同一类型。</span>
+<span id="cb18-179"><a href="#cb18-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-180"><a href="#cb18-180" aria-hidden="true" tabindex="-1"></a><span class="in">`?matrix`</span></span>
+<span id="cb18-181"><a href="#cb18-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-182"><a href="#cb18-182" aria-hidden="true" tabindex="-1"></a><span class="in">`matrix(data= ,nrow=1 ,ncol=1 ,byrow=FALSE ,dimnames=list(rnames,cnames) ,...)`</span></span>
+<span id="cb18-183"><a href="#cb18-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-186"><a href="#cb18-186" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-187"><a href="#cb18-187" aria-hidden="true" tabindex="-1"></a>num<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">16</span>,<span class="dv">22</span>,<span class="dv">24</span>,<span class="dv">28</span>)</span>
+<span id="cb18-188"><a href="#cb18-188" aria-hidden="true" tabindex="-1"></a>rnames<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"R1"</span>,<span class="st">"R2"</span>)</span>
+<span id="cb18-189"><a href="#cb18-189" aria-hidden="true" tabindex="-1"></a>cnames<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"C1"</span>,<span class="st">"C2"</span>)</span>
+<span id="cb18-190"><a href="#cb18-190" aria-hidden="true" tabindex="-1"></a>mymatrix<span class="ot">&lt;-</span><span class="fu">matrix</span>(num,<span class="at">nrow=</span><span class="dv">2</span>,<span class="at">ncol=</span><span class="dv">2</span>,<span class="at">byrow=</span><span class="cn">TRUE</span>,<span class="at">dimnames=</span><span class="fu">list</span>(rnames,cnames))</span>
+<span id="cb18-191"><a href="#cb18-191" aria-hidden="true" tabindex="-1"></a>mymatrix   </span>
+<span id="cb18-192"><a href="#cb18-192" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-193"><a href="#cb18-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-194"><a href="#cb18-194" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**array--数组**，所有元素必须是同一类型。</span>
+<span id="cb18-195"><a href="#cb18-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-196"><a href="#cb18-196" aria-hidden="true" tabindex="-1"></a><span class="in">`?array`</span></span>
+<span id="cb18-197"><a href="#cb18-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-198"><a href="#cb18-198" aria-hidden="true" tabindex="-1"></a><span class="in">`array(data,dim_numeric_vector,dimnames = list(dim1,dim2,...),...)`</span></span>
+<span id="cb18-199"><a href="#cb18-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-202"><a href="#cb18-202" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-203"><a href="#cb18-203" aria-hidden="true" tabindex="-1"></a>v<span class="ot">&lt;-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">24</span> </span>
+<span id="cb18-204"><a href="#cb18-204" aria-hidden="true" tabindex="-1"></a>dim1<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"A1"</span>,<span class="st">"A2"</span>,<span class="st">"A3"</span>) </span>
+<span id="cb18-205"><a href="#cb18-205" aria-hidden="true" tabindex="-1"></a>dim2<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"B1"</span>,<span class="st">"B2"</span>,<span class="st">"B3"</span>,<span class="st">"B4"</span>)</span>
+<span id="cb18-206"><a href="#cb18-206" aria-hidden="true" tabindex="-1"></a>dim3<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"C1"</span>,<span class="st">"C2"</span>) </span>
+<span id="cb18-207"><a href="#cb18-207" aria-hidden="true" tabindex="-1"></a>myarray<span class="ot">&lt;-</span><span class="fu">array</span>(v,<span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">2</span>),<span class="at">dimnames =</span> <span class="fu">list</span>(dim1,dim2,dim3)) </span>
+<span id="cb18-208"><a href="#cb18-208" aria-hidden="true" tabindex="-1"></a>myarray</span>
+<span id="cb18-209"><a href="#cb18-209" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-210"><a href="#cb18-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-211"><a href="#cb18-211" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**data.frame/tibble-- 数据框**， 由列向量组成，每一列元素必须是同一类型，列与列之间长度必须相同，但类型可以不同。</span>
+<span id="cb18-212"><a href="#cb18-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-213"><a href="#cb18-213" aria-hidden="true" tabindex="-1"></a><span class="in">`?data.frame`</span></span>
+<span id="cb18-214"><a href="#cb18-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-215"><a href="#cb18-215" aria-hidden="true" tabindex="-1"></a><span class="in">`data.frame(name1=col1,name2=col2,...,row.names = ,...)`</span></span>
+<span id="cb18-216"><a href="#cb18-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-217"><a href="#cb18-217" aria-hidden="true" tabindex="-1"></a><span class="in">`?tibble`</span>，<span class="in">`tibble()`</span>是tidyverse风格的数据框，用法类似。</span>
+<span id="cb18-218"><a href="#cb18-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-221"><a href="#cb18-221" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-222"><a href="#cb18-222" aria-hidden="true" tabindex="-1"></a>id<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>) </span>
+<span id="cb18-223"><a href="#cb18-223" aria-hidden="true" tabindex="-1"></a>age<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">21</span>,<span class="dv">14</span>,<span class="dv">52</span>,<span class="dv">15</span>) </span>
+<span id="cb18-224"><a href="#cb18-224" aria-hidden="true" tabindex="-1"></a>diabetes<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"t1"</span>,<span class="st">"t2"</span>,<span class="st">"t1"</span>,<span class="st">"t1"</span>) </span>
+<span id="cb18-225"><a href="#cb18-225" aria-hidden="true" tabindex="-1"></a>status<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"poor"</span>,<span class="st">"better"</span>,<span class="st">"best"</span>,<span class="st">"poor"</span>) </span>
+<span id="cb18-226"><a href="#cb18-226" aria-hidden="true" tabindex="-1"></a>patient<span class="ot">&lt;-</span><span class="fu">data.frame</span>(<span class="at">patientID=</span>id,age,diabetes,status,<span class="at">row.names =</span> id) <span class="co"># 4个列向量组成数据框 </span></span>
+<span id="cb18-227"><a href="#cb18-227" aria-hidden="true" tabindex="-1"></a>patient</span>
+<span id="cb18-228"><a href="#cb18-228" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-229"><a href="#cb18-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-230"><a href="#cb18-230" aria-hidden="true" tabindex="-1"></a>list --列表，由以上各种数据结构组成</span>
+<span id="cb18-231"><a href="#cb18-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-232"><a href="#cb18-232" aria-hidden="true" tabindex="-1"></a><span class="in">`?list`</span></span>
+<span id="cb18-233"><a href="#cb18-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-234"><a href="#cb18-234" aria-hidden="true" tabindex="-1"></a><span class="in">`list(name1=object1,name2=object2,...)`</span></span>
+<span id="cb18-235"><a href="#cb18-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-238"><a href="#cb18-238" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-239"><a href="#cb18-239" aria-hidden="true" tabindex="-1"></a>mylist<span class="ot">&lt;-</span><span class="fu">list</span>(<span class="at">title=</span><span class="st">"My list"</span>,</span>
+<span id="cb18-240"><a href="#cb18-240" aria-hidden="true" tabindex="-1"></a>             <span class="at">matr=</span><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="st">"a1"</span>,<span class="st">"b1"</span>,<span class="st">"a2"</span>,<span class="st">"b2"</span>),<span class="at">nrow=</span><span class="dv">2</span>,<span class="at">ncol=</span><span class="dv">2</span>,<span class="at">byrow=</span><span class="cn">TRUE</span>,</span>
+<span id="cb18-241"><a href="#cb18-241" aria-hidden="true" tabindex="-1"></a>                         <span class="at">dimnames =</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="st">"X1"</span>,<span class="st">"X2"</span>),<span class="fu">c</span>(<span class="st">"Y1"</span>,<span class="st">"Y2"</span>))</span>
+<span id="cb18-242"><a href="#cb18-242" aria-hidden="true" tabindex="-1"></a>             ),</span>
+<span id="cb18-243"><a href="#cb18-243" aria-hidden="true" tabindex="-1"></a>             <span class="at">df=</span><span class="fu">data.frame</span>(<span class="at">id=</span><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="st">"Lisa"</span>,<span class="st">"BOb"</span>,<span class="st">"John"</span>,<span class="st">"Jule"</span>),</span>
+<span id="cb18-244"><a href="#cb18-244" aria-hidden="true" tabindex="-1"></a>                                     <span class="at">nrow=</span><span class="dv">4</span>,<span class="at">ncol=</span><span class="dv">1</span>,<span class="at">byrow=</span><span class="cn">TRUE</span></span>
+<span id="cb18-245"><a href="#cb18-245" aria-hidden="true" tabindex="-1"></a>             ),</span>
+<span id="cb18-246"><a href="#cb18-246" aria-hidden="true" tabindex="-1"></a>             <span class="at">int=</span><span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>),</span>
+<span id="cb18-247"><a href="#cb18-247" aria-hidden="true" tabindex="-1"></a>             <span class="at">TF=</span><span class="fu">c</span>(T,T,T,F)</span>
+<span id="cb18-248"><a href="#cb18-248" aria-hidden="true" tabindex="-1"></a>             ),</span>
+<span id="cb18-249"><a href="#cb18-249" aria-hidden="true" tabindex="-1"></a>             <span class="at">list=</span><span class="fu">list</span>(<span class="at">a=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>),<span class="at">b=</span><span class="fu">c</span>(<span class="st">"A"</span>,<span class="st">"B"</span>))</span>
+<span id="cb18-250"><a href="#cb18-250" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb18-251"><a href="#cb18-251" aria-hidden="true" tabindex="-1"></a>mylist</span>
+<span id="cb18-252"><a href="#cb18-252" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-253"><a href="#cb18-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-254"><a href="#cb18-254" aria-hidden="true" tabindex="-1"></a><span class="fu"># qmd_format</span></span>
+<span id="cb18-255"><a href="#cb18-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-256"><a href="#cb18-256" aria-hidden="true" tabindex="-1"></a>|                                                            |                                                         |</span>
+<span id="cb18-257"><a href="#cb18-257" aria-hidden="true" tabindex="-1"></a>  |-------------------------|-----------------------------------------------|</span>
+<span id="cb18-258"><a href="#cb18-258" aria-hidden="true" tabindex="-1"></a>  | 输出                                                       | 语法                                                    |</span>
+<span id="cb18-259"><a href="#cb18-259" aria-hidden="true" tabindex="-1"></a>  | <span class="in">`code`</span>                                                     | <span class="sc">\`</span><span class="in">`code`</span><span class="sc">\`</span>                                              |</span>
+<span id="cb18-260"><a href="#cb18-260" aria-hidden="true" tabindex="-1"></a>  | **粗体**                                                   | `**粗体**`                                              |</span>
+<span id="cb18-261"><a href="#cb18-261" aria-hidden="true" tabindex="-1"></a>  | *斜体*                                                     | `*斜体*`                                                |</span>
+<span id="cb18-262"><a href="#cb18-262" aria-hidden="true" tabindex="-1"></a>  | <span class="co">[</span><span class="ot">下横线</span><span class="co">]</span>{.underline}                                       | <span class="in">`[下横线]{.underline}`</span>                                  |</span>
+<span id="cb18-263"><a href="#cb18-263" aria-hidden="true" tabindex="-1"></a>  | ~~删除线~~                                                 | `~~删除线~~`                                            |</span>
+<span id="cb18-264"><a href="#cb18-264" aria-hidden="true" tabindex="-1"></a>  | 上标X^2^                                                   | <span class="in">`X^2^`</span>                                                  |</span>
+<span id="cb18-265"><a href="#cb18-265" aria-hidden="true" tabindex="-1"></a>  | 下标 X~1~                                                  | <span class="in">`X~1~`</span>                                                  |</span>
+<span id="cb18-266"><a href="#cb18-266" aria-hidden="true" tabindex="-1"></a>  | <span class="co">[</span><span class="ot">SAMALL small caps</span><span class="co">]</span>{.smallcaps}                            | 与小写字母同等高度的大写字母 <span class="in">`[small caps]{.smallcaps}`</span> |</span>
+<span id="cb18-267"><a href="#cb18-267" aria-hidden="true" tabindex="-1"></a>  | <span class="ot">&lt;https://r4ds.hadley.nz/&gt;</span>                                  | <span class="in">`&lt;https://r4ds.hadley.nz/&gt;`</span>                             |</span>
+<span id="cb18-268"><a href="#cb18-268" aria-hidden="true" tabindex="-1"></a>  | <span class="co">[</span><span class="ot">quarto</span><span class="co">](https://quarto.org)</span>                               | <span class="in">`[quarto](https://quarto.org)`</span>                          |</span>
+<span id="cb18-269"><a href="#cb18-269" aria-hidden="true" tabindex="-1"></a>  | <span class="al">![data science](images/whole-game.png)</span>{alt="data science"} | <span class="in">`![data science](images/whole-game.png)`</span>                |</span>
+<span id="cb18-270"><a href="#cb18-270" aria-hidden="true" tabindex="-1"></a>  </span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+</body></html>
