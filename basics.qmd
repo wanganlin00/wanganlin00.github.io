@@ -1,13 +1,18 @@
 ---
   knitr:
-  opts_chunk:
-  comment: "#>"
-collapse: true
+    opts_chunk:
+      comment: "#>"
+      collapse: true
+  format: 
+    html: 
+      code-fold: true
+      code-tools: true
+      code-link: true
 ---
   
-  # base R {.unnumbered}
+# base R {.unnumbered}
   
-  # 最重要的是帮助文档
+# 最重要的是帮助文档
   
   The Comprehensive R Archive Network [CRAN](https://cran.r-project.org/)
 
