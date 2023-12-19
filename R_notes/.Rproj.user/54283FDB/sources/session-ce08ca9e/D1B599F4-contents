@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "R_notes"
+  author: "Wang Anlin"
+  date: "2023/12/19"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - basics.qmd
+    - summary.qmd
+    - references.qmd
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
