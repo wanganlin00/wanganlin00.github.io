@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R_notes",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "basics.html",
+    "href": "basics.html",
+    "title": "base R",
+    "section": "",
+    "text": "最重要的是帮助文档\nThe Comprehensive R Archive Network CRAN\n\nCodehelp.start()\nhelp()\n?c\n\n\n包的安装和使用\n\nCodeinstalled.packages()\ninstall.packages(\"ggplot2\") \nlibrary(ggplot2) # 载入包\nrequire(ggplot2) # 另一种载入方式\nhelp(package = \"ggplot2\") # R包ggplot2的帮助文档\n?ggplot2\ndata(package=\"ggplot2\")   #查看R包ggplot2中的数据集\n\ndata(mpg,package=\"ggplot2\")  #加载数据集\nhelp(mpg) # 数据集mpg的帮助文档\n?mpg\nmpg\n\n\n变量类型\n数据类型（mode）：表示对象在计算机内存中的存储类型\n\nnumeric – 数值型（Integer/double）integer – 整型 L\n\n\nCodemode(4.3)\n#&gt; [1] \"numeric\"\nclass(4.3)\n#&gt; [1] \"numeric\"\nmode(1L)\n#&gt; [1] \"numeric\"\nclass(1L)\n#&gt; [1] \"integer\"\n\n\n\ncharacter – 字符型\n\n\nCodemode(c(\"car\"))\n#&gt; [1] \"character\"\nclass(\"car\")\n#&gt; [1] \"character\"\n\n\n\nlogical –逻辑型\n\n\nCodemode(c(TRUE,FALSE))\n#&gt; [1] \"logical\"\nclass(c(TRUE,FALSE))\n#&gt; [1] \"logical\"\n\n\n\nfactor–因子\n\n\nCodemode(factor((c(1,2,3)))) \n#&gt; [1] \"numeric\"\nclass(factor((c(1,2,3)))) \n#&gt; [1] \"factor\"\n\n\n\ndate/datetime–日期/日期时间\n\n默认格式：\"%Y-%m-%d\" xxxx-xx-xx,例如：2023-03-15\n\nCodemode(as.Date(\"2023-12-11\"))\n#&gt; [1] \"numeric\"\nclass(as.Date(\"2023-12-11\")) \n#&gt; [1] \"Date\"\n\nSys.Date()\n#&gt; [1] \"2023-12-19\"\nas.Date(c(\"02 14-2002\",\"01 04-2013\"),\"%m %d-%Y\") #以\"%m %d-%Y\"格式读入\n#&gt; [1] \"2002-02-14\" \"2013-01-04\"\nformat(Sys.Date(),\"%Y/%m/%d\") #以\"%Y/%m/%d\"格式输出\n#&gt; [1] \"2023/12/19\"\n\n\n\nfunction–函数\n\n\nCodemode(c)\n#&gt; [1] \"function\"\nclass(c)\n#&gt; [1] \"function\"\n\n\n\nlist–列表\n\n\nCodemode(mpg)\n#&gt; [1] \"list\"\nclass(mpg)\n#&gt; [1] \"tbl_df\"     \"tbl\"        \"data.frame\"\n\n\n\ncomplex – 复数型\n\n\nCode\nmode(c(1+2i,3-4i)) \n#&gt; [1] \"complex\"\nclass(c(1+2i,3-4i))\n#&gt; [1] \"complex\"\n\n\n\nraw–原始型\n\n\nCodecharToRaw(\"abcde12345\") #字符串中每个字符的原始存储格式（十六进制？）\n#&gt;  [1] 61 62 63 64 65 31 32 33 34 35\nmode(charToRaw(\"abcde12345\")) \n#&gt; [1] \"raw\"\nclass(charToRaw(\"abcde12345\"))\n#&gt; [1] \"raw\"\n\n\n数据结构\n数据结构(class)：是一种基于面向对象的R的抽象类型划分,或者理解为一种数据结构。\n\n\nvector –向量，同一类元素的集合。\n\n?c      #Combine Values into a Vector or List\n\nCode#单元素向量\n1\n#&gt; [1] 1\n\nis.vector(1)\n#&gt; [1] TRUE\n\n\"a\"\n#&gt; [1] \"a\"\nis.vector(\"a\")\n#&gt; [1] TRUE\n\n#使用函数c()创建向量\n\nc(1)\n#&gt; [1] 1\nc(1,2,3,4,5)\n#&gt; [1] 1 2 3 4 5\nc(\"a\",\"b\",\"c\")\n#&gt; [1] \"a\" \"b\" \"c\"\n\n\n\n\nfactor –因子，分类变量，其中每个级别都是一类。\n\n?factor\nfactor(vector,order=FALSE,levels=c(v1,v2,…),labels= ,...) ，在内存中以整数c(1,2,3,...,k)形式存储。\n\nCode#类别（名义型）变量\ndiabetes&lt;-c(\"t1\",\"t2\",\"t1\",\"t1\") \nstr(diabetes)\n#&gt;  chr [1:4] \"t1\" \"t2\" \"t1\" \"t1\"\ndiabetes&lt;-factor(diabetes)\nstr(diabetes)\n#&gt;  Factor w/ 2 levels \"t1\",\"t2\": 1 2 1 1\n\n\n#有序型变量     默认水平根据字母顺序而定\nstatus&lt;-c(\"poor\",\"better\",\"best\",\"poor\")\nstatus&lt;-factor(status,order=TRUE) \nstr(status) \n#&gt;  Ord.factor w/ 3 levels \"best\"&lt;\"better\"&lt;..: 3 2 1 3\nstatus&lt;-factor(status,order=TRUE,levels = c(\"poor\",\"better\",\"best\")) \nstr(status) \n#&gt;  Ord.factor w/ 3 levels \"poor\"&lt;\"better\"&lt;..: 1 2 3 1\n\n#改变外在标签\nsex&lt;-c(1,2,2,1)\nsex\n#&gt; [1] 1 2 2 1\nsex&lt;-factor(sex,levels=c(1,2),labels = c(\"男\",\"女\")) \nstr(sex) \n#&gt;  Factor w/ 2 levels \"男\",\"女\": 1 2 2 1\nsex\n#&gt; [1] 男 女 女 男\n#&gt; Levels: 男 女\n\n\n\n\nmatrix –矩阵，所有元素必须是同一类型。\n\n?matrix\nmatrix(data= ,nrow=1 ,ncol=1 ,byrow=FALSE ,dimnames=list(rnames,cnames) ,...)\n\nCodenum&lt;-c(16,22,24,28)\nrnames&lt;-c(\"R1\",\"R2\")\ncnames&lt;-c(\"C1\",\"C2\")\nmymatrix&lt;-matrix(num,nrow=2,ncol=2,byrow=TRUE,dimnames=list(rnames,cnames))\nmymatrix   \n#&gt;    C1 C2\n#&gt; R1 16 22\n#&gt; R2 24 28\n\n\n\n\narray–数组，所有元素必须是同一类型。\n\n?array\narray(data,dim_numeric_vector,dimnames = list(dim1,dim2,...),...)\n\nCodev&lt;-1:24 \ndim1&lt;-c(\"A1\",\"A2\",\"A3\") \ndim2&lt;-c(\"B1\",\"B2\",\"B3\",\"B4\")\ndim3&lt;-c(\"C1\",\"C2\") \nmyarray&lt;-array(v,c(3,4,2),dimnames = list(dim1,dim2,dim3)) \nmyarray\n#&gt; , , C1\n#&gt; \n#&gt;    B1 B2 B3 B4\n#&gt; A1  1  4  7 10\n#&gt; A2  2  5  8 11\n#&gt; A3  3  6  9 12\n#&gt; \n#&gt; , , C2\n#&gt; \n#&gt;    B1 B2 B3 B4\n#&gt; A1 13 16 19 22\n#&gt; A2 14 17 20 23\n#&gt; A3 15 18 21 24\n\n\n\n\ndata.frame/tibble– 数据框， 由列向量组成，每一列元素必须是同一类型，列与列之间长度必须相同，但类型可以不同。\n\n?data.frame\ndata.frame(name1=col1,name2=col2,...,row.names = ,...)\n?tibble，tibble()是tidyverse风格的数据框，用法类似。\n\nCodeid&lt;-c(1,2,3,4) \nage&lt;-c(21,14,52,15) \ndiabetes&lt;-c(\"t1\",\"t2\",\"t1\",\"t1\") \nstatus&lt;-c(\"poor\",\"better\",\"best\",\"poor\") \npatient&lt;-data.frame(patientID=id,age,diabetes,status,row.names = id) # 4个列向量组成数据框 \npatient\n#&gt;   patientID age diabetes status\n#&gt; 1         1  21       t1   poor\n#&gt; 2         2  14       t2 better\n#&gt; 3         3  52       t1   best\n#&gt; 4         4  15       t1   poor\n\n\nlist –列表，由以上各种数据结构组成\n?list\nlist(name1=object1,name2=object2,...)\n\nCodemylist&lt;-list(title=\"My list\",\n             matr=matrix(c(\"a1\",\"b1\",\"a2\",\"b2\"),nrow=2,ncol=2,byrow=TRUE,\n                         dimnames = list(c(\"X1\",\"X2\"),c(\"Y1\",\"Y2\"))\n             ),\n             df=data.frame(id=matrix(c(\"Lisa\",\"BOb\",\"John\",\"Jule\"),\n                                     nrow=4,ncol=1,byrow=TRUE\n             ),\n             int=c(3,5,7,9),\n             TF=c(T,T,T,F)\n             ),\n             list=list(a=c(1,2,3),b=c(\"A\",\"B\"))\n)\nmylist\n#&gt; $title\n#&gt; [1] \"My list\"\n#&gt; \n#&gt; $matr\n#&gt;    Y1   Y2  \n#&gt; X1 \"a1\" \"b1\"\n#&gt; X2 \"a2\" \"b2\"\n#&gt; \n#&gt; $df\n#&gt;     id int    TF\n#&gt; 1 Lisa   3  TRUE\n#&gt; 2  BOb   5  TRUE\n#&gt; 3 John   7  TRUE\n#&gt; 4 Jule   9 FALSE\n#&gt; \n#&gt; $list\n#&gt; $list$a\n#&gt; [1] 1 2 3\n#&gt; \n#&gt; $list$b\n#&gt; [1] \"A\" \"B\"\n\n\nqmd_format\n\n\n输出\n语法\n\n\ncode\n`code`\n\n\n粗体\n**粗体**\n\n\n斜体\n*斜体*\n\n\n下横线\n[下横线]{.underline}\n\n\n删除线\n~~删除线~~\n\n\n上标X2\n\nX^2^\n\n\n下标 X1\n\nX~1~\n\n\nSAMALL small caps\n与小写字母同等高度的大写字母 [small caps]{.smallcaps}\n\n\n\nhttps://r4ds.hadley.nz/\n&lt;https://r4ds.hadley.nz/&gt;\n\n\nquarto\n[quarto](https://quarto.org)\n\n\n\n![data science](whole-game.png)"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]
