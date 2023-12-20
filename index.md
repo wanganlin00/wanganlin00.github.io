@@ -5,8 +5,8 @@
 ## Notes
 
 -   [没上传 R data science_notes](https://github.com/Wanganlin00/)
--   [没上传Statistics_notes](https://github.com/Wanganlin00/)
--   [没开始Bioconductor_notes](https://github.com/Wanganlin00/)
+-   [没上传 Statistics_notes](https://github.com/Wanganlin00/)
+-   [没开始 Bioconductor_notes](https://github.com/Wanganlin00/)
 
 ## Resources
 
