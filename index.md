@@ -1,9 +1,3 @@
----
-  title: "Homepage"
-  number-sections: true
-
----
-
 ## Welcome
 
 这是我的个人网站，用来存放笔记和网站
