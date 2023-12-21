@@ -23,7 +23,7 @@
 -   [Orchestrating Single-Cell Analysis with Bioconductor](https://bioconductor.org/books/release/OSCA/)
 -   [Assigning cell types with SingleR](https://bioconductor.org/books/release/SingleRBook/)
 
-### statistical problem
+### biostatistical problem
 
 -   [Modern Statistics for Modern Biology](https://www.huber.embl.de/msmb/)
 -   [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear/)
