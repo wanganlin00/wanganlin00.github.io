@@ -1,5 +1,9 @@
 theme: jekyll-theme-minimal
 title: HomePage
+subtitle: XXX
 author: 王安林
+data:
+update:
+comments:
 description: Bookmark this to keep an eye on my booknotes updates!
 show_downloads: true
