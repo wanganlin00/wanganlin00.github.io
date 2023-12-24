@@ -31,7 +31,7 @@
 -   [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
 -   [R语言实战医学统计](https://ayueme.github.io/R_medical_stat/)
 
-### others
+### 其他
 
 -   [quarto.org](https://quarto.org/)
 -   [bookdown.org](https://bookdown.org/)
