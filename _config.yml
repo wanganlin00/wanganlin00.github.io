@@ -6,4 +6,4 @@ data:
 update:
 comments:
 description: Bookmark this to keep an eye on my booknotes updates!
-show_downloads: true
+show_downloads: false
