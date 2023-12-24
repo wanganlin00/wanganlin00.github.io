@@ -1,13 +1,13 @@
 ## Welcome
 
-这是我的个人网站，用来存放笔记和网站。邮箱：wanganlin00@outlook.com
+这是我的个人网站，用来存放笔记和网站。
 
-## Notes
+## 笔记
 
--   [没上传 R data science_notes](https://wanganlin00.github.io/Rdatascience_notes)
--   [没开始 Bioconductor_notes](https://wanganlin00.github.io/Bioconductor_notes/)
--   [没上传 BioStatistics_notes](https://wanganlin00.github.io/BioStatistics_notes/)
--   [空想ing ......](https://github.com/Wanganlin00/)
+-   [R data science_notes](https://wanganlin00.github.io/Rdatascience_notes)
+-   [Bioconductor_notes](https://wanganlin00.github.io/Bioconductor_notes/)
+-   [BioStatistics_notes](https://wanganlin00.github.io/BioStatistics_notes/)
+-   [waiting ......](https://github.com/Wanganlin00/)
 
 ## Resources
 
