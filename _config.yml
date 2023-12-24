@@ -1,9 +1,4 @@
 theme: jekyll-theme-minimal
 title: HomePage
-subtitle: XXX
-author: 王安林
-data:
-update: 2023-10-14
-comments: true
 description: Bookmark this to keep an eye on my booknotes updates!
 show_downloads: false
