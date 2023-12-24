@@ -1,3 +1,5 @@
-theme: jekyll-theme-leap-day
+theme: jekyll-theme-minimal
 title: HomePage
+author: 王安林
 description: Bookmark this to keep an eye on my booknotes updates!
+show_downloads: true
