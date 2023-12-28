@@ -1,13 +1,7 @@
 # Welcome
 
-这是我的个人网站，用来存放学习笔记和网站。
+这是我用来存放学习笔记和学习资料的网站。
 
-## learning
-
--   [bioconductor.org](https://new.bioconductor.org/)
--   [tidyverse.org](https://www.tidyverse.org/)
--   [bookdown.org](https://bookdown.org/)
--   [quarto.org](https://quarto.org/)
 
 # Notes
 
@@ -17,6 +11,15 @@
 -   [waiting ......](https://github.com/Wanganlin00/)
 
 # Resources
+
+## site
+
+-   [bioconductor.org](https://new.bioconductor.org/)
+-   [tidyverse.org](https://www.tidyverse.org/)
+-   [www.tidymodels.org](https://www.tidymodels.org/)
+-   [bookdown.org](https://bookdown.org/)
+-   [arrow.apache.org](https://arrow.apache.org/docs/r/)
+-   [quarto.org](https://quarto.org/)
 
 ## R data science
 
@@ -38,3 +41,5 @@
 -   [ISLR](https://www.statlearning.com/)
 -   [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
 -   [R语言实战医学统计](https://ayueme.github.io/R_medical_stat/)
+
+
