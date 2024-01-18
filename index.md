@@ -6,9 +6,9 @@
 # Notes
 
 -   [R data science_notes](https://wanganlin00.github.io/Rdatascience_notes)
--   [Bioconductor_notes](https://wanganlin00.github.io/Bioconductor_notes/)
+-   [Bioinformatics_notes](https://wanganlin00.github.io/Bioinformatics_notes/)
 -   [BioStatistics_notes](https://wanganlin00.github.io/BioStatistics_notes/)
--   [waiting ......](https://github.com/Wanganlin00/)
+
 
 # Resources
 
