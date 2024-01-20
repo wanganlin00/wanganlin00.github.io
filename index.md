@@ -2,11 +2,23 @@
 
 常用资源网站
 
-## 杂志
+## 期刊
 
--   [***NEJM***](https://www.nejm.org)
--   [***NATURE REVIEWS CANCER***](https://www.nature.com/nrc/)
--   [***Cancer Research***](https://aacrjournals.org/cancerres)
+-   ......
+-   [***International Journal of Radiation Oncology • Biology • Physics*** (IJROBP) 美国放射肿瘤学学会（American Society for Radiation Oncology，ASTRO）](https://www.redjournal.org/)
+-   [***Radiotherapy and Oncology*** 欧洲放射肿瘤学学会（European Society for Radiotherapy & Oncology，ESTRO）](https://www.thegreenjournal.com/)
+-   [***The New England Journal of Medicine***](https://www.nejm.org)
+-   [***British Medical Journal***](https://www.bmj.com/)
+-   [Nature Communications](https://www.nature.com/ncomms/)
+-   [Nature Reviews Cancer](https://www.nature.com/nrc/)
+-   [**The Lancet**](https://www.thelancet.com/)
+-   [The Lancet Oncology](https://www.thelancet.com/journals/lanonc/home)
+-   [**Journal of the American Medical Association**](https://jamanetwork.com/journals/jama)
+-   [JAMA Oncology](https://jamanetwork.com/journals/jamaoncology)
+-   [**Cancer Research** 美国癌症研究学会（American Association for Cancer Research，AACR）](https://aacrjournals.org/cancerres)
+-   [***Journal of Clinical Oncology*** 美国临床肿瘤学会（American Society of Clinical Oncology，ASCO）](https://ascopubs.org/journal/jco)
+-   
+-   ......
 
 ## 笔记
 
@@ -39,14 +51,12 @@
 
 ### ***biostatistics***
 
--   [www.tidymodels.org](https://www.tidymodels.org/)
+-   [www.***tidymodels***.org](https://www.tidymodels.org/)
 
 -   [Modern Statistics for Modern Biology](https://www.huber.embl.de/msmb/)
 
 -   [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear/)
 
--   [ISLR](https://www.statlearning.com/)
-
--   [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
+-   [***ISLR***](https://www.statlearning.com/)+ [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
 
 -   [R语言实战医学统计](https://ayueme.github.io/R_medical_stat/)
