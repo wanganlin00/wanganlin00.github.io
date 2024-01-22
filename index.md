@@ -9,15 +9,14 @@
 -   [***Radiotherapy and Oncology*** 欧洲放射肿瘤学学会（European Society for Radiotherapy & Oncology，ESTRO）](https://www.thegreenjournal.com/)
 -   [***The New England Journal of Medicine***](https://www.nejm.org)
 -   [***British Medical Journal***](https://www.bmj.com/)
--   [Nature Communications](https://www.nature.com/ncomms/)
--   [Nature Reviews Cancer](https://www.nature.com/nrc/)
+-   [**Nature** Communications](https://www.nature.com/ncomms/)
+-   [**Nature Reviews** Cancer](https://www.nature.com/nrc/)
 -   [**The Lancet**](https://www.thelancet.com/)
 -   [The Lancet Oncology](https://www.thelancet.com/journals/lanonc/home)
 -   [**Journal of the American Medical Association**](https://jamanetwork.com/journals/jama)
 -   [JAMA Oncology](https://jamanetwork.com/journals/jamaoncology)
 -   [**Cancer Research** 美国癌症研究学会（American Association for Cancer Research，AACR）](https://aacrjournals.org/cancerres)
 -   [***Journal of Clinical Oncology*** 美国临床肿瘤学会（American Society of Clinical Oncology，ASCO）](https://ascopubs.org/journal/jco)
--   
 -   ......
 
 ## 笔记
@@ -30,7 +29,7 @@
 
 ### ***bioinformatics***
 
--   [***Seurat***单细胞基因组学工具](https://satijalab.org/seurat/)
+-   [***Seurat***](https://satijalab.org/seurat/)[单细胞基因组学工具](https://satijalab.org/seurat/)
 -   [***Scanpy*** -- Single-Cell Analysis in Python](https://scanpy.readthedocs.io/en/stable/index.html)
 -   [***Scanpy*** in R](https://theislab.github.io/scanpy-in-R/)
 -   [**bioconductor.org**](https://new.bioconductor.org/)
