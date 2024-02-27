@@ -4,7 +4,11 @@
 
 ## 期刊
 
--   ......
+-   ......技术
+-   [Bio-protocol](https://bio-protocol.org/cn)
+-   [Current Protocols](https://currentprotocols.onlinelibrary.wiley.com/)
+-   [Nature Protocols-Protocol Exchange](https://protocolexchange.researchsquare.com/)
+-   ......研究
 -   [***International Journal of Radiation Oncology • Biology • Physics*** (IJROBP) 美国放射肿瘤学学会（American Society for Radiation Oncology，ASTRO）](https://www.redjournal.org/)
 -   [***Radiotherapy and Oncology*** 欧洲放射肿瘤学学会（European Society for Radiotherapy & Oncology，ESTRO）](https://www.thegreenjournal.com/)
 -   [***The New England Journal of Medicine***](https://www.nejm.org)
@@ -17,7 +21,6 @@
 -   [JAMA Oncology](https://jamanetwork.com/journals/jamaoncology)
 -   [**Cancer Research** 美国癌症研究学会（American Association for Cancer Research，AACR）](https://aacrjournals.org/cancerres)
 -   [***Journal of Clinical Oncology*** 美国临床肿瘤学会（American Society of Clinical Oncology，ASCO）](https://ascopubs.org/journal/jco)
--   ......
 
 ## 笔记
 
@@ -29,7 +32,7 @@
 
 ### ***bioinformatics***
 
--   [***Seurat***](https://satijalab.org/seurat/)[单细胞基因组学工具](https://satijalab.org/seurat/)
+-   [***Seurat***单细胞基因组学工具](https://satijalab.org/seurat/)
 -   [***Scanpy*** -- Single-Cell Analysis in Python](https://scanpy.readthedocs.io/en/stable/index.html)
 -   [***Scanpy*** in R](https://theislab.github.io/scanpy-in-R/)
 -   [**bioconductor.org**](https://new.bioconductor.org/)
