@@ -1,8 +1,12 @@
 # Welcome
 
-常用资源网站
+## 笔记
 
-## 期刊
+-   [data science_notes](https://wanganlin00.github.io/Rdatascience_notes)
+-   [bioinformatics_notes](https://wanganlin00.github.io/Bioinformatics_notes/)
+-   [bioStatistics_notes](https://wanganlin00.github.io/BioStatistics_notes/)
+
+## Journals
 
 -   ......技术
 -   [Bio-protocol](https://bio-protocol.org/cn)
@@ -22,23 +26,18 @@
 -   [**Cancer Research** 美国癌症研究学会（American Association for Cancer Research，AACR）](https://aacrjournals.org/cancerres)
 -   [***Journal of Clinical Oncology*** 美国临床肿瘤学会（American Society of Clinical Oncology，ASCO）](https://ascopubs.org/journal/jco)
 
-## 笔记
-
--   [data science_notes](https://wanganlin00.github.io/Rdatascience_notes)
--   [bioinformatics_notes](https://wanganlin00.github.io/Bioinformatics_notes/)
--   [bioStatistics_notes](https://wanganlin00.github.io/BioStatistics_notes/)
-
-## Resources
-
 ### ***bioinformatics***
 
--   [***Seurat***单细胞基因组学工具](https://satijalab.org/seurat/)
--   [***Scanpy*** -- Single-Cell Analysis in Python](https://scanpy.readthedocs.io/en/stable/index.html)
+-   [***Seurat***](https://satijalab.org/seurat/) *-* [单细胞基因组学工具](https://satijalab.org/seurat/)
 -   [***Scanpy*** in R](https://theislab.github.io/scanpy-in-R/)
 -   [**bioconductor.org**](https://new.bioconductor.org/)
 -   [Orchestrating Single-Cell Analysis with ***Bioconductor***](https://bioconductor.org/books/release/OSCA/)
 -   [Assigning cell types with ***SingleR***](https://bioconductor.org/books/release/SingleRBook/)
 -   [***tidySingleCellExperiment***](https://bioconductor.org/packages/release/bioc/html/tidySingleCellExperiment.html)
+
+### Python ***data science***
+
+-   [***Scanpy*** - Single-Cell Analysis in Python](https://scanpy.readthedocs.io/en/stable/index.html)
 
 ### ***R data science***
 
