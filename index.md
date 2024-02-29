@@ -2,7 +2,7 @@
 
 ## 笔记
 
--   [data science_notes](https://wanganlin00.github.io/Rdatascience_notes)
+-   [data science_notes](https://wanganlin00.github.io/datascience_notes)
 
 -   [bioinformatics_notes](https://wanganlin00.github.io/Bioinformatics_notes/)
 
