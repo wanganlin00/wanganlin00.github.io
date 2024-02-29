@@ -2,13 +2,13 @@
 
 ## 笔记
 
--   [data science_notes](https://wanganlin00.github.io/datascience_notes)
+-   [data science_notes](https://wanganlin00.github.io/datascience_notes/)
 
 -   [bioinformatics_notes](https://wanganlin00.github.io/Bioinformatics_notes/)
 
 -   [bioStatistics_notes](https://wanganlin00.github.io/BioStatistics_notes/)
 
-## Journals
+### journals
 
 -   ......技术
 -   [Bio-protocol](https://bio-protocol.org/cn)
@@ -37,7 +37,7 @@
 -   [Assigning cell types with ***SingleR***](https://bioconductor.org/books/release/SingleRBook/)
 -   [***tidySingleCellExperiment***](https://bioconductor.org/packages/release/bioc/html/tidySingleCellExperiment.html)
 
-### Python ***data science***
+### ***Python data science***
 
 -   [***Scanpy*** - Single-Cell Analysis in Python](https://scanpy.readthedocs.io/en/stable/index.html)
 
