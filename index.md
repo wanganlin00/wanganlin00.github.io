@@ -40,6 +40,7 @@
 ### ***Python data science***
 
 -   [***Scanpy*** - Single-Cell Analysis in Python](https://scanpy.readthedocs.io/en/stable/index.html)
+-   [Anaconda](https://www.anaconda.com/download/)
 
 ### ***R data science***
 
@@ -63,3 +64,9 @@
 -   [***ISLR***](https://www.statlearning.com/)+ [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
 
 -   [R语言实战医学统计](https://ayueme.github.io/R_medical_stat/)
+
+### 科学上网
+
+[geph](https://geph.io/)
+
+<https://waa.ai/xiazaimiwutong>
