@@ -1,5 +1,13 @@
-👋 Hi, I’m @Wanganlin00
-👀 I’m interested in sing-cell sequencing,bioinformatics and oncology radiotherapy.
-🌱 I’d like to ...
-💞️ I’m looking to collaborate on ...
-📫 Contact me：wanganlin00@outlook.com
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+👋 Hi,I'm interested in oncology radiotherapy. 👀
+
+🌱 I'd like to learn the analysis of single-cell sequencing data with
+Python or R.💞️
+
+📫 Contact
+me：[wanganlin00\@outlook.com](mailto:wanganlin00@outlook.com){.email}
