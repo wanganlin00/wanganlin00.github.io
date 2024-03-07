@@ -2,11 +2,13 @@
 
 ## 笔记
 
--   [data science_notes](https://wanganlin00.github.io/datascience_notes/)
+-   [Biology Experiments](https://wanganlin00.github.io/BiologyExperiments/)
 
--   [bioinformatics_notes](https://wanganlin00.github.io/Bioinformatics_notes/)
+-   [Data Science Notes](https://wanganlin00.github.io/DataScience/)
 
--   [bioStatistics_notes](https://wanganlin00.github.io/BioStatistics_notes/)
+-   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
+
+-   [BioStatistics Notes](https://wanganlin00.github.io/BioStatistics_notes/)
 
 ### journals
 
