@@ -2,7 +2,7 @@
 
 ## 笔记
 
--   [Biology Experiments](https://wanganlin00.github.io/BiologyExperiments/)
+-   [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
 
 -   [Data Science Notes](https://wanganlin00.github.io/DataScience/)
 
