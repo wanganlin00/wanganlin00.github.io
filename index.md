@@ -8,7 +8,7 @@
 
 -   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
 
--   [BioStatistics Notes](https://wanganlin00.github.io/BioStatistics_notes/)
+-   [BioStatistics Notes](https://wanganlin00.github.io/BioStatistics/)
 
 ### journals
 
