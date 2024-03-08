@@ -2,31 +2,33 @@
 
 💤 💯🤣
 
-## **笔记**
+## **Notes**
 
--   [Data Science Notes](https://wanganlin00.github.io/DataScience/)
+1.  [Data Science Notes](https://wanganlin00.github.io/DataScience/)
 
--   [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
+2.  [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
 
--   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
+3.  [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
 
--   [BioStatistics Notes](https://wanganlin00.github.io/BioStatistics/)
+4.  [BioStatistics Notes](https://wanganlin00.github.io/BioStatistics/)
 
-## ***Bioprotocs***
+## **References**
+
+### *Bioprotocs*
 
 -   [Bio-protocol](https://bio-protocol.org/cn)
 -   [Current Protocols](https://currentprotocols.onlinelibrary.wiley.com/)
 -   [Nature Protocols-Protocol Exchange](https://protocolexchange.researchsquare.com/)
 
-## ***Bioinformatics***
+### *Bioinformatics*
 
--   [***Seurat***](https://satijalab.org/seurat/) *-* [单细胞基因组学工具](https://satijalab.org/seurat/)
+-   [***Seurat***](https://satijalab.org/seurat/)
 -   [***Scanpy*** in R](https://theislab.github.io/scanpy-in-R/)
 -   [**bioconductor.org**](https://new.bioconductor.org/)
 -   [Orchestrating Single-Cell Analysis with ***Bioconductor***](https://bioconductor.org/books/release/OSCA/)
 -   [***tidySingleCellExperiment***](https://bioconductor.org/packages/release/bioc/html/tidySingleCellExperiment.html)
 
-## ***Python data science***
+### *Python data science*
 
 -   [PyPi](https://pypi.org/)
 -   [***Scanpy*** - Single-Cell Analysis in Python](https://scanpy.readthedocs.io/en/stable/index.html)
@@ -34,7 +36,7 @@
 -   [Anaconda cloud](https://anaconda.cloud/)
 -   [Pytorch](https://pytorch.org/)
 
-## ***R data science***
+### *R data science*
 
 -   [tidyverse.org](https://www.tidyverse.org/)
 -   [bookdown.org](https://bookdown.org/)
@@ -45,7 +47,7 @@
 -   [Advanced R](https://adv-r.hadley.nz/index.html#other-books)
 -   [R Packages](https://r-pkgs.org/)
 
-## ***Biostatistics***
+### *Biostatistics*
 
 -   [Modern Statistics for Modern Biology](https://www.huber.embl.de/msmb/)
 
@@ -53,7 +55,7 @@
 
 -   [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
 
-## *Journals*
+## **Journals**
 
 -   [International Journal of Radiation Oncology • Biology • Physics (IJROBP) (American Society for Radiation Oncology,ASTRO)](https://www.redjournal.org/)
 -   [The New England Journal of Medicine](https://www.nejm.org)
@@ -63,8 +65,8 @@
 -   [Cancer Research (American Association for Cancer Research,AACR)](https://aacrjournals.org/cancerres)
 -   Journal of Translational Medicine 转化医学
 
-### 科学上网
+## **科学上网**
 
-[geph](https://geph.io/)
+1.  [geph](https://geph.io/)
 
-<https://waa.ai/xiazaimiwutong>
+2.  <https://waa.ai/xiazaimiwutong>
