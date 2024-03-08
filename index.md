@@ -1,8 +1,12 @@
 # Welcome
 
-💤 💯🤣
+------------------------------------------------------------------------
+
+<!--# 💤 💯🤣 -->
 
 ## **Notes**
+
+------------------------------------------------------------------------
 
 1.  [Data Science Notes](https://wanganlin00.github.io/DataScience/)
 
@@ -14,6 +18,8 @@
 
 ## **References**
 
+------------------------------------------------------------------------
+
 ### *Bioprotocs*
 
 -   [Bio-protocol](https://bio-protocol.org/cn)
@@ -23,6 +29,7 @@
 ### *Bioinformatics*
 
 -   [***Seurat***](https://satijalab.org/seurat/)
+-   [Bioconda](https://bioconda.github.io/)
 -   [***Scanpy*** in R](https://theislab.github.io/scanpy-in-R/)
 -   [**bioconductor.org**](https://new.bioconductor.org/)
 -   [Orchestrating Single-Cell Analysis with ***Bioconductor***](https://bioconductor.org/books/release/OSCA/)
@@ -57,6 +64,8 @@
 
 ## **Journals**
 
+------------------------------------------------------------------------
+
 -   [International Journal of Radiation Oncology • Biology • Physics (IJROBP) (American Society for Radiation Oncology,ASTRO)](https://www.redjournal.org/)
 -   [The New England Journal of Medicine](https://www.nejm.org)
 -   [Nature Communications](https://www.nature.com/ncomms/)
@@ -65,8 +74,8 @@
 -   [Cancer Research (American Association for Cancer Research,AACR)](https://aacrjournals.org/cancerres)
 -   Journal of Translational Medicine 转化医学
 
-## **科学上网**
+## **科学上网**[^index-1][^index-2]
 
-1.  [geph](https://geph.io/)
+[^index-1]: <https://waa.ai/xiazaimiwutong>
 
-2.  <https://waa.ai/xiazaimiwutong>
+[^index-2]: [geph](https://geph.io/)
