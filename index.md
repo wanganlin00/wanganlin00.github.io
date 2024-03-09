@@ -8,6 +8,9 @@
 
 ------------------------------------------------------------------------
 
+------------------------------------------------------------------------
+
+
 1.  [Data Science Notes](https://wanganlin00.github.io/DataScience/)
 
 2.  [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
@@ -20,7 +23,12 @@
 
 ------------------------------------------------------------------------
 
+------------------------------------------------------------------------
+
+
 ### *Bioprotocs*
+
+------------------------------------------------------------------------
 
 -   \*[JoVE](https://www.jove.com/cn/)
 -   \*[JoVE science education](https://www.jove.com/cn/science-education-library)
@@ -29,7 +37,7 @@
 -   [Current Protocols](https://currentprotocols.onlinelibrary.wiley.com/)
 -   [Nature Protocols-Protocol Exchange](https://protocolexchange.researchsquare.com/)
 
-## **Journals**
+### **Journals**
 
 ------------------------------------------------------------------------
 
@@ -44,12 +52,22 @@
 
 ### *Bioinformatics*
 
+------------------------------------------------------------------------
+
 -   [***Seurat***](https://satijalab.org/seurat/)
+
 -   [Bioconda](https://bioconda.github.io/)
+
 -   [***Scanpy*** in R](https://theislab.github.io/scanpy-in-R/)
+
 -   [**bioconductor.org**](https://new.bioconductor.org/)
+
 -   [Orchestrating Single-Cell Analysis with ***Bioconductor***](https://bioconductor.org/books/release/OSCA/)
+
 -   [***tidySingleCellExperiment***](https://bioconductor.org/packages/release/bioc/html/tidySingleCellExperiment.html)
+
+
+------------------------------------------------------------------------
 
 ### *Python data science*
 
@@ -77,6 +95,10 @@
 -   [*ISLR*](https://www.statlearning.com/)
 
 -   [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
+
+
+------------------------------------------------------------------------
+
 
 ## **科学上网**[^index-1][^index-2]
 
