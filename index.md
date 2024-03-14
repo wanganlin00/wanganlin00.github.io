@@ -8,9 +8,6 @@
 
 ------------------------------------------------------------------------
 
-------------------------------------------------------------------------
-
-
 1.  [Data Science Notes](https://wanganlin00.github.io/DataScience/)
 
 2.  [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
@@ -22,9 +19,6 @@
 ## **References**
 
 ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
 
 ### *Bioprotocs*
 
@@ -41,14 +35,12 @@
 
 ------------------------------------------------------------------------
 
--   [International Journal of Radiation Oncology • Biology • Physics (IJROBP) (American Society for Radiation Oncology,ASTRO)](https://www.redjournal.org/)
--   \*[The New England Journal of Medicine](https://www.nejm.org)
--   \*[JAMA美国医学会](https://jamanetwork.com/)
--   [Nature Communications](https://www.nature.com/ncomms/)
--   [Nature Reviews Cancer](https://www.nature.com/nrc/)
--   [Journal of the American Medical Association](https://jamanetwork.com/journals/jama)
+-   [International Journal of Radiation Oncology • Biology • Physics (American Society for Radiation Oncology,ASTRO)](https://www.sciencedirect.com/journal/international-journal-of-radiation-oncology-biology-physics)
+-   [Radiotherapy and Oncology,ESTRO](https://www.sciencedirect.com/journal/radiotherapy-and-oncology)
+-   \*[NEJM (The New England Journal of Medicine)](https://www.nejm.org)
+-   \*[JAMA (Journal of the American Medical Association)](https://jamanetwork.com/)
+-   [Nature](https://www.nature.com/)
 -   [Cancer Research (American Association for Cancer Research,AACR)](https://aacrjournals.org/cancerres)
--   Journal of Translational Medicine 转化医学
 
 ### *Bioinformatics*
 
@@ -65,7 +57,6 @@
 -   [Orchestrating Single-Cell Analysis with ***Bioconductor***](https://bioconductor.org/books/release/OSCA/)
 
 -   [***tidySingleCellExperiment***](https://bioconductor.org/packages/release/bioc/html/tidySingleCellExperiment.html)
-
 
 ------------------------------------------------------------------------
 
@@ -96,9 +87,7 @@
 
 -   [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
 
-
 ------------------------------------------------------------------------
-
 
 ## **科学上网**[^index-1][^index-2]
 
