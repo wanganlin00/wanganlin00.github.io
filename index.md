@@ -1,12 +1,8 @@
-# Welcome
+# 👋🏻 Welcome
 
-------------------------------------------------------------------------
+💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯
 
-💤 💯🤣
-
-## **Notes**
-
-------------------------------------------------------------------------
+## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- 📝 **Notes**
 
 1.  [Data Science Notes](https://wanganlin00.github.io/DataScience/)
 
@@ -16,9 +12,22 @@
 
 4.  [BioStatistics Notes](https://wanganlin00.github.io/BioStatistics/)
 
-## **References**
+## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--🐍 **References**
+
+💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤
+
+### **Journals**
 
 ------------------------------------------------------------------------
+
+-   [中华医学期刊全文数据框](https://www.yiigle.com/index)
+-   [USTC web VPN](https://wvpn.ustc.edu.cn/)
+-   [International Journal of Radiation Oncology • Biology • Physics (American Society for Radiation Oncology,ASTRO)](https://www.sciencedirect.com/journal/international-journal-of-radiation-oncology-biology-physics)
+-   [Radiotherapy and Oncology,ESTRO](https://www.sciencedirect.com/journal/radiotherapy-and-oncology)
+-   \*[NEJM (The New England Journal of Medicine)](https://www.nejm.org)
+-   \*[JAMA (Journal of the American Medical Association)](https://jamanetwork.com/)
+-   [Nature](https://www.nature.com/)
+-   [Cancer Research (American Association for Cancer Research,AACR)](https://aacrjournals.org/cancerres)
 
 ### *Bioprotocs*
 
@@ -30,17 +39,6 @@
 -   [Bio-protocol](https://bio-protocol.org/cn)
 -   [Current Protocols](https://currentprotocols.onlinelibrary.wiley.com/)
 -   [Nature Protocols-Protocol Exchange](https://protocolexchange.researchsquare.com/)
-
-### **Journals**
-
-------------------------------------------------------------------------
-
--   [International Journal of Radiation Oncology • Biology • Physics (American Society for Radiation Oncology,ASTRO)](https://www.sciencedirect.com/journal/international-journal-of-radiation-oncology-biology-physics)
--   [Radiotherapy and Oncology,ESTRO](https://www.sciencedirect.com/journal/radiotherapy-and-oncology)
--   \*[NEJM (The New England Journal of Medicine)](https://www.nejm.org)
--   \*[JAMA (Journal of the American Medical Association)](https://jamanetwork.com/)
--   [Nature](https://www.nature.com/)
--   [Cancer Research (American Association for Cancer Research,AACR)](https://aacrjournals.org/cancerres)
 
 ### *Bioinformatics*
 
@@ -83,14 +81,10 @@
 
 -   [Modern Statistics for Modern Biology](https://www.huber.embl.de/msmb/)
 
+-   [t-Distributed Stochastic Neighbor Embedding (t-SNE)](https://lvdmaaten.github.io/tsne/){.uri}、[R-tSNE](https://cran.r-project.org/web/packages/tsne/)
+
+-   [Uniform Manifold Approximation and Projection(UMAP)](https://umap-learn.readthedocs.io/en/latest/){.uri}
+
 -   [*ISLR*](https://www.statlearning.com/)
 
 -   [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
-
-------------------------------------------------------------------------
-
-## **科学上网**[^index-1][^index-2]
-
-[^index-1]: <https://waa.ai/xiazaimiwutong>
-
-[^index-2]: [geph](https://geph.io/)
