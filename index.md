@@ -1,8 +1,8 @@
-# 👋🏻 Welcome
+# 👋🏻 Welcome[^index-1]
+
+[^index-1]: [ORCID](https://orcid.org/0009-0003-7561-3856)
 
 💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯
-
-[ORCID](https://orcid.org/0009-0003-7561-3856){.uri}
 
 ## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- 📝 **Notes**
 
@@ -90,5 +90,3 @@
 -   [*ISLR*](https://www.statlearning.com/)
 
 -   [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
-
-[Git](https://git-scm.com/)
