@@ -83,7 +83,9 @@
 
 -   [Modern Statistics for Modern Biology](https://www.huber.embl.de/msmb/)
 
--   [t-Distributed Stochastic Neighbor Embedding (t-SNE)](https://lvdmaaten.github.io/tsne/){.uri}、[R-tSNE](https://cran.r-project.org/web/packages/tsne/)
+-   [t-Distributed Stochastic Neighbor Embedding (t-SNE)](https://lvdmaaten.github.io/tsne/){.uri}
+
+-   [R-tSNE](https://cran.r-project.org/web/packages/tsne/)
 
 -   [Uniform Manifold Approximation and Projection(UMAP)](https://umap-learn.readthedocs.io/en/latest/){.uri}
 
