@@ -12,7 +12,7 @@
 
 3.  [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
 
-4.  [BioStatistics Notes](https://wanganlin00.github.io/BioStatistics/)
+4.  [BioStatisticsGraphics Notes](https://wanganlin00.github.io/BioStatisticsGraphics/)
 
 ## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--🐍 **References**
 
