@@ -6,13 +6,15 @@
 
 ## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- 📝 **Notes**
 
-1.  [Data Science Notes](https://wanganlin00.github.io/DataScience/)
+1.  [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)
 
-2.  [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
+2.  [R Data Science Notes](https://wanganlin00.github.io/RDataScience/)
 
-3.  [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
+3.  [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
 
-4.  [BioStatisticsGraphics Notes](https://wanganlin00.github.io/BioStatisticsGraphics/)
+4.  [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
+
+5.  [BioStatisticsGraphics Notes](https://wanganlin00.github.io/BioStatisticsGraphics/)
 
 ## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--🐍 **References**
 
