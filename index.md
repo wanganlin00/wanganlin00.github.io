@@ -18,17 +18,24 @@
 
 💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤
 
+### Website
+
+------------------------------------------------------------------------
+
+[UCSC Xena](https://xena.ucsc.edu/)
+
+[Pandoc](https://pandoc.org/)
+
 ### **Journals**
 
 ------------------------------------------------------------------------
 
--   [中华医学期刊全文数据框](https://www.yiigle.com/index)
 -   [USTC web VPN](https://wvpn.ustc.edu.cn/)
--   [International Journal of Radiation Oncology • Biology • Physics (American Society for Radiation Oncology,ASTRO)](https://www.sciencedirect.com/journal/international-journal-of-radiation-oncology-biology-physics)
--   [Radiotherapy and Oncology,ESTRO](https://www.sciencedirect.com/journal/radiotherapy-and-oncology)
+-   [中华医学期刊全文数据框](https://www.yiigle.com/index)
 -   \*[NEJM (The New England Journal of Medicine)](https://www.nejm.org)
 -   \*[JAMA (Journal of the American Medical Association)](https://jamanetwork.com/)
--   [Nature](https://www.nature.com/)
+-   [International Journal of Radiation Oncology • Biology • Physics (American Society for Radiation Oncology,ASTRO)](https://www.sciencedirect.com/journal/international-journal-of-radiation-oncology-biology-physics)
+-   [Radiotherapy and Oncology,ESTRO](https://www.sciencedirect.com/journal/radiotherapy-and-oncology)
 -   [Cancer Research (American Association for Cancer Research,AACR)](https://aacrjournals.org/cancerres)
 
 ### *Bioprotocs*
@@ -39,8 +46,6 @@
 -   \*[JoVE science education](https://www.jove.com/cn/science-education-library)
 -   \*[Springer Protocols](https://experiments.springernature.com/)
 -   [Bio-protocol](https://bio-protocol.org/cn)
--   [Current Protocols](https://currentprotocols.onlinelibrary.wiley.com/)
--   [Nature Protocols-Protocol Exchange](https://protocolexchange.researchsquare.com/)
 
 ### *Bioinformatics*
 
@@ -76,6 +81,7 @@
 -   [R in action 3rd](https://livebook.manning.com/book/r-in-action-third-edition)
 -   [R for data science](https://r4ds.hadley.nz/)
 -   [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
+-   <https://exts.ggplot2.tidyverse.org/gallery/>
 -   [Advanced R](https://adv-r.hadley.nz/index.html#other-books)
 -   [R Packages](https://r-pkgs.org/)
 
@@ -92,3 +98,13 @@
 -   [*ISLR*](https://www.statlearning.com/)
 
 -   [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
+
+### *LaTeX*
+
+------------------------------------------------------------------------
+
+[USTC TeX Users Group](https://github.com/ustctug)
+
+[LaTeX template for USTC thesis](https://github.com/ustctug/ustcthesis)
+
+[USTC Beamer 模板](https://github.com/ustctug/ustcbeamer)
