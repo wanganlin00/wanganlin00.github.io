@@ -6,15 +6,15 @@
 
 ## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- 📝 **Notes**
 
-1.  [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)
+1.  [R Data Science Notes](https://wanganlin00.github.io/RDataScience/)
 
-2.  [R Data Science Notes](https://wanganlin00.github.io/RDataScience/)
+2.  [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
 
-3.  [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
+3.  [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
 
-4.  [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
+4.  [BioStatisticsGraphics Notes](https://wanganlin00.github.io/BioStatisticsGraphics/)
 
-5.  [BioStatisticsGraphics Notes](https://wanganlin00.github.io/BioStatisticsGraphics/)
+5.  [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)
 
 ## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--🐍 **References**
 
@@ -24,9 +24,13 @@
 
 ------------------------------------------------------------------------
 
-[UCSC Xena](https://xena.ucsc.edu/)
+-   [JoVE](https://www.jove.com/cn/)
 
-[Pandoc](https://pandoc.org/)
+-   [UCSC Xena](https://xena.ucsc.edu/)
+
+-   [Springer Protocols](https://experiments.springernature.com/)
+
+-   [Pandoc](https://pandoc.org/)
 
 ### **Journals**
 
@@ -34,20 +38,10 @@
 
 -   [USTC web VPN](https://wvpn.ustc.edu.cn/)
 -   [中华医学期刊全文数据框](https://www.yiigle.com/index)
--   \*[NEJM (The New England Journal of Medicine)](https://www.nejm.org)
--   \*[JAMA (Journal of the American Medical Association)](https://jamanetwork.com/)
+-   [NEJM (The New England Journal of Medicine)](https://www.nejm.org)
+-   [JAMA (Journal of the American Medical Association)](https://jamanetwork.com/)
 -   [International Journal of Radiation Oncology • Biology • Physics (American Society for Radiation Oncology,ASTRO)](https://www.sciencedirect.com/journal/international-journal-of-radiation-oncology-biology-physics)
 -   [Radiotherapy and Oncology,ESTRO](https://www.sciencedirect.com/journal/radiotherapy-and-oncology)
--   [Cancer Research (American Association for Cancer Research,AACR)](https://aacrjournals.org/cancerres)
-
-### *Bioprotocs*
-
-------------------------------------------------------------------------
-
--   \*[JoVE](https://www.jove.com/cn/)
--   \*[JoVE science education](https://www.jove.com/cn/science-education-library)
--   \*[Springer Protocols](https://experiments.springernature.com/)
--   [Bio-protocol](https://bio-protocol.org/cn)
 
 ### *Bioinformatics*
 
@@ -63,47 +57,45 @@
 
 -   [***tidySingleCellExperiment***](https://bioconductor.org/packages/release/bioc/html/tidySingleCellExperiment.html)
 
-------------------------------------------------------------------------
-
 ### *Python data science*
 
--   [Python docs](https://docs.python.org/zh-cn/3.11/)
+------------------------------------------------------------------------
+
 -   [PyPi](https://pypi.org/)
--   [Anaconda](https://www.anaconda.com/download/)
+-   [pandas](https://pandas.pydata.org/)
+-   [numpy](https://numpy.org/)
+-   [biopython](https://biopython.org/wiki/Documentation)
+-   [scanpy](https://scanpy.readthedocs.io/en/stable/)
+-   [Anaconda](https://docs.anaconda.com/)
 -   [Pytorch](https://pytorch.org/)
 
-### *R data science*
+### *R data science for Biostatistics and Graphics*
+
+------------------------------------------------------------------------
 
 -   [tidyverse.org](https://www.tidyverse.org/)
--   [bookdown.org](https://bookdown.org/)
--   [arrow.apache.org](https://arrow.apache.org/docs/r/)
--   [R in action 3rd](https://livebook.manning.com/book/r-in-action-third-edition)
+-   [data.table](https://rdatatable.gitlab.io/data.table/)
 -   [R for data science](https://r4ds.hadley.nz/)
 -   [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
 -   <https://exts.ggplot2.tidyverse.org/gallery/>
 -   [Advanced R](https://adv-r.hadley.nz/index.html#other-books)
+-   [bookdown.org](https://bookdown.org/)
+-   [arrow.apache.org](https://arrow.apache.org/docs/r/)
 -   [R Packages](https://r-pkgs.org/)
-
-### *Biostatistics*
-
+-   [R in action 3rd](https://livebook.manning.com/book/r-in-action-third-edition)
 -   [Modern Statistics for Modern Biology](https://www.huber.embl.de/msmb/)
-
 -   [t-Distributed Stochastic Neighbor Embedding (t-SNE)](https://lvdmaaten.github.io/tsne/)
-
 -   [R-tSNE](https://cran.r-project.org/web/packages/tsne/)
-
 -   [Uniform Manifold Approximation and Projection(UMAP)](https://umap-learn.readthedocs.io/en/latest/)
-
 -   [*ISLR*](https://www.statlearning.com/)
-
 -   [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
 
 ### *LaTeX*
 
 ------------------------------------------------------------------------
 
-[USTC TeX Users Group](https://github.com/ustctug)
+-   [USTC TeX Users Group](https://github.com/ustctug)
 
-[LaTeX template for USTC thesis](https://github.com/ustctug/ustcthesis)
+-   [LaTeX template for USTC thesis](https://github.com/ustctug/ustcthesis)
 
-[USTC Beamer 模板](https://github.com/ustctug/ustcbeamer)
+-   [USTC Beamer 模板](https://github.com/ustctug/ustcbeamer)
