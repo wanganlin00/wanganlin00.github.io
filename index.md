@@ -55,11 +55,9 @@
 
 -   [***Seurat***](https://satijalab.org/seurat/)
 
--   [Bioconda](https://bioconda.github.io/)
-
--   [***Scanpy*** in R](https://theislab.github.io/scanpy-in-R/)
-
 -   [**bioconductor.org**](https://new.bioconductor.org/)
+
+-   [Bioconda](https://bioconda.github.io/)
 
 -   [Orchestrating Single-Cell Analysis with ***Bioconductor***](https://bioconductor.org/books/release/OSCA/)
 
@@ -69,10 +67,9 @@
 
 ### *Python data science*
 
+-   [Python docs](https://docs.python.org/zh-cn/3.11/)
 -   [PyPi](https://pypi.org/)
--   [***Scanpy*** - Single-Cell Analysis in Python](https://scanpy.readthedocs.io/en/stable/index.html)
 -   [Anaconda](https://www.anaconda.com/download/)
--   [Anaconda cloud](https://anaconda.cloud/)
 -   [Pytorch](https://pytorch.org/)
 
 ### *R data science*
