@@ -24,6 +24,8 @@
 
 ------------------------------------------------------------------------
 
+-   [USTC web VPN](https://wvpn.ustc.edu.cn/)
+
 -   [JoVE](https://www.jove.com/cn/)
 
 -   [UCSC Xena](https://xena.ucsc.edu/)
@@ -36,14 +38,13 @@
 
 ------------------------------------------------------------------------
 
--   [USTC web VPN](https://wvpn.ustc.edu.cn/)
 -   [中华医学期刊全文数据框](https://www.yiigle.com/index)
 -   [NEJM (The New England Journal of Medicine)](https://www.nejm.org)
 -   [JAMA (Journal of the American Medical Association)](https://jamanetwork.com/)
 -   [International Journal of Radiation Oncology • Biology • Physics (American Society for Radiation Oncology,ASTRO)](https://www.sciencedirect.com/journal/international-journal-of-radiation-oncology-biology-physics)
 -   [Radiotherapy and Oncology,ESTRO](https://www.sciencedirect.com/journal/radiotherapy-and-oncology)
 
-### *Bioinformatics*
+### *Bioinformatics in scRNA-seq*
 
 ------------------------------------------------------------------------
 
@@ -51,11 +52,9 @@
 
 -   [**bioconductor.org**](https://new.bioconductor.org/)
 
--   [Bioconda](https://bioconda.github.io/)
-
 -   [Orchestrating Single-Cell Analysis with ***Bioconductor***](https://bioconductor.org/books/release/OSCA/)
 
--   [***tidySingleCellExperiment***](https://bioconductor.org/packages/release/bioc/html/tidySingleCellExperiment.html)
+-   [Bioconda 不支持windows](https://bioconda.github.io/)
 
 ### *Python data science*
 
@@ -69,7 +68,7 @@
 -   [Anaconda](https://docs.anaconda.com/)
 -   [Pytorch](https://pytorch.org/)
 
-### *R data science for Biostatistics and Graphics*
+### *R data science ,Biostatistics & Graphics*
 
 ------------------------------------------------------------------------
 
@@ -90,7 +89,7 @@
 -   [*ISLR*](https://www.statlearning.com/)
 -   [ISLR with tidymodels](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/)
 
-### *LaTeX*
+### *USEC LaTeX*
 
 ------------------------------------------------------------------------
 
