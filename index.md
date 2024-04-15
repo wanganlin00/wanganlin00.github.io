@@ -2,11 +2,11 @@
 
 [^index-1]: [ORCID](https://orcid.org/0009-0003-7561-3856)
 
-💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯
+good good study, day day up🤣
 
-💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤
+## 📝 Notes
 
-## ---------------------------------📝 Notes------------------------------
+------------------------------------------------------------------------
 
 -   [R Data Science Notes](https://wanganlin00.github.io/RDataScience/)
 
@@ -18,11 +18,11 @@
 
 -   [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)
 
-## ------------------------------🐍 **References**---------------------------
-
-### **Journals**
+## 🐍 References
 
 ------------------------------------------------------------------------
+
+### Journals
 
 -   [USTC web VPN](https://wvpn.ustc.edu.cn/)
 -   [中华医学期刊全文数据框](https://www.yiigle.com/index)
@@ -32,9 +32,7 @@
 -   [International Journal of Radiation Oncology • Biology • Physics (American Society for Radiation Oncology,ASTRO)](https://www.sciencedirect.com/journal/international-journal-of-radiation-oncology-biology-physics)
 -   [Radiotherapy and Oncology,ESTRO](https://www.sciencedirect.com/journal/radiotherapy-and-oncology)
 
-### *USTC LaTeX*
-
-------------------------------------------------------------------------
+### USTC LaTeX
 
 -   [USTC TeX Users Group](https://github.com/ustctug)
 
