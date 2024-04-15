@@ -54,6 +54,12 @@
 
 -   [Orchestrating Single-Cell Analysis with ***Bioconductor***](https://bioconductor.org/books/release/OSCA/)
 
+-   [BD Bioscience](https://www.bdbiosciences.com/zh-cn)
+
+-   [Kaplan-Meier绘图仪](http://kmplot.com/analysis)
+
+-   [ROC绘图仪](https://rocplot.com/)
+
 -   [Bioconda 不支持windows](https://bioconda.github.io/)
 
 ### *Python data science*
