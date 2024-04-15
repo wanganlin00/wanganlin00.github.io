@@ -79,15 +79,8 @@
 ------------------------------------------------------------------------
 
 -   [tidyverse.org](https://www.tidyverse.org/)
--   [data.table](https://rdatatable.gitlab.io/data.table/)
--   [R for data science](https://r4ds.hadley.nz/)
 -   [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
 -   <https://exts.ggplot2.tidyverse.org/gallery/>
--   [Advanced R](https://adv-r.hadley.nz/index.html#other-books)
--   [bookdown.org](https://bookdown.org/)
--   [arrow.apache.org](https://arrow.apache.org/docs/r/)
--   [R Packages](https://r-pkgs.org/)
--   [R in action 3rd](https://livebook.manning.com/book/r-in-action-third-edition)
 -   [Modern Statistics for Modern Biology](https://www.huber.embl.de/msmb/)
 -   [t-Distributed Stochastic Neighbor Embedding (t-SNE)](https://lvdmaaten.github.io/tsne/)
 -   [R-tSNE](https://cran.r-project.org/web/packages/tsne/)
