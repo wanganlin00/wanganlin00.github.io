@@ -1,8 +1,8 @@
-# 👋🏻 Welcome {.unnumbered style="color:red"}
+# Welcome {.unnumbered style="color:red"}
 
 good good study, day day up🤣[ORCID](https://orcid.org/0009-0003-7561-3856)。。。。。。
 
-## 📝 Notes {.unnumbered style="color:pink"}
+## Notes {.unnumbered style="color:pink"}
 
 ------------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ good good study, day day up🤣[ORCID](https://orcid.org/0009-0003-7561-3856)。
 
 -   [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)
 
-## 🐍 References {.unnumbered style="color:lightblue"}
+## References {.unnumbered style="color:lightblue"}
 
 ------------------------------------------------------------------------
 
