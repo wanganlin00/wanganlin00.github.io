@@ -1,12 +1,16 @@
 # 👋🏻 Welcome
 
-good good study, day day up🤣[ORCID](https://orcid.org/0009-0003-7561-3856)。。。。。。
+🤣
+
+good good study, day day up。。。。。。
+
+[ORCID](https://orcid.org/0009-0003-7561-3856)
 
 ## 📝 Notes
 
 ------------------------------------------------------------------------
 
--   [R Data Science Notes](https://wanganlin00.github.io/RDataScience/)
+-   [R Notes](https://wanganlin00.github.io/R/)
 
 -   [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
 
