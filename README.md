@@ -4,4 +4,4 @@
 
 👁️I'd like to ...
 
-💬Contact me:wanganlin00\@outlook.com
+💬Contact me:wanganlin00@outlook.com
