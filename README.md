@@ -1,7 +1,7 @@
 # [HomePage](https://wanganlin00.github.io/)
 
-😘Hi,I'm interested in oncology radiotherapy.
+😘Hi,I'm interested in...
 
-👁️I'd like to learn the analysis of single-cell sequencing data with Python or R.
+👁️I'd like to ...
 
 💬Contact me:wanganlin00\@outlook.com
