@@ -1,11 +1,5 @@
 # 👋🏻 Welcome
 
-🤣
-
-good good study, day day up。。。。。。
-
-[ORCID](https://orcid.org/0009-0003-7561-3856)
-
 ## 📝 Notes
 
 ------------------------------------------------------------------------
@@ -33,6 +27,7 @@ good good study, day day up。。。。。。
 -   [JAMA (Journal of the American Medical Association)](https://jamanetwork.com/)
 -   [International Journal of Radiation Oncology • Biology • Physics (American Society for Radiation Oncology,ASTRO)](https://www.sciencedirect.com/journal/international-journal-of-radiation-oncology-biology-physics)
 -   [Radiotherapy and Oncology,ESTRO](https://www.sciencedirect.com/journal/radiotherapy-and-oncology)
+-   [ORCID](https://orcid.org/0009-0003-7561-3856)
 
 ### USTC LaTeX
 
