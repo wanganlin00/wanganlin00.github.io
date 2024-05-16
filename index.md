@@ -6,6 +6,8 @@
 
 -   [R Notes](https://wanganlin00.github.io/R/)
 
+-   [R 图表](https://wanganlin00.github.io/RforGraph-TableinArticles/)
+
 -   [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
 
 -   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
