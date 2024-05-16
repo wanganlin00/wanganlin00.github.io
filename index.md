@@ -36,3 +36,5 @@
 -   [LaTeX template for USTC thesis](https://github.com/ustctug/ustcthesis)
 
 -   [USTC Beamer 模板](https://github.com/ustctug/ustcbeamer)
+
+[Adobe Acrobat Reader DC](https://get.adobe.com/cn/reader/otherversions/)
