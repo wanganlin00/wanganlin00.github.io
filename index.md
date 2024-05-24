@@ -4,15 +4,15 @@
 
 ------------------------------------------------------------------------
 
--   [R Notes](https://wanganlin00.github.io/R/)
-
--   [R 图表](https://wanganlin00.github.io/RforGraph-TableinArticles/)
-
--   [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
+-   [R for Graph and Table](https://wanganlin00.github.io/RforGraph-TableinArticles/)
 
 -   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
 
+-   [R Notes](https://wanganlin00.github.io/R/)
+
 -   [MedicalStatistics Notes](https://wanganlin00.github.io/MedicalStatistics/)
+
+-   [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
 
 -   [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)
 
@@ -23,10 +23,10 @@
 ### Journals
 
 -   [USTC web VPN](https://wvpn.ustc.edu.cn/)
--   [中华医学期刊全文数据框](https://www.yiigle.com/index)
--   [JoVE](https://www.jove.com/cn/)
 -   [NEJM (The New England Journal of Medicine)](https://www.nejm.org)
 -   [JAMA (Journal of the American Medical Association)](https://jamanetwork.com/)
+-   [中华医学期刊全文数据框](https://www.yiigle.com/index)
+-   [JoVE](https://www.jove.com/cn/)
 -   [International Journal of Radiation Oncology • Biology • Physics (American Society for Radiation Oncology,ASTRO)](https://www.sciencedirect.com/journal/international-journal-of-radiation-oncology-biology-physics)
 -   [Radiotherapy and Oncology,ESTRO](https://www.sciencedirect.com/journal/radiotherapy-and-oncology)
 -   [ORCID](https://orcid.org/0009-0003-7561-3856)
@@ -39,4 +39,14 @@
 
 -   [USTC Beamer 模板](https://github.com/ustctug/ustcbeamer)
 
-[Adobe Acrobat Reader DC](https://get.adobe.com/cn/reader/otherversions/)
+## 软件
+
+-   [Github Desktop](https://desktop.github.com/)
+
+-   [Git](https://git-scm.com/)
+
+-   [Obsidian](https://obsidian.md/download)
+
+-   [Anaconda](https://www.anaconda.com/download/success)
+
+-   [睿克云盘](https://rec.ustc.edu.cn/download)
