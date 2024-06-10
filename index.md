@@ -4,7 +4,7 @@
 
 ------------------------------------------------------------------------
 
--   [R for Graph and Table](https://wanganlin00.github.io/RforGraphTable/)
+-   [R for Graphics and Tables](https://wanganlin00.github.io/R4GT/)
 
 -   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
 
