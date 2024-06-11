@@ -47,6 +47,8 @@
 
 -   [Anaconda](https://www.anaconda.com/download/success)
 
+-   [3D slicer](https://www.slicer.org/)
+
 -   [plink 2.0](https://www.cog-genomics.org/plink/2.0/)
 
 -   [睿克云盘](https://rec.ustc.edu.cn/download)
