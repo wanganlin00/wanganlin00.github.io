@@ -20,16 +20,13 @@
 
 ------------------------------------------------------------------------
 
-### Journals
+### 网站
 
 -   [USTC web VPN](https://wvpn.ustc.edu.cn/)
--   [NEJM (The New England Journal of Medicine)](https://www.nejm.org)
--   [JAMA (Journal of the American Medical Association)](https://jamanetwork.com/)
 -   [中华医学期刊全文数据框](https://www.yiigle.com/index)
--   [JoVE](https://www.jove.com/cn/)
--   [International Journal of Radiation Oncology • Biology • Physics (American Society for Radiation Oncology,ASTRO)](https://www.sciencedirect.com/journal/international-journal-of-radiation-oncology-biology-physics)
--   [Radiotherapy and Oncology,ESTRO](https://www.sciencedirect.com/journal/radiotherapy-and-oncology)
 -   [ORCID](https://orcid.org/0009-0003-7561-3856)
+-   [GENCODE](https://www.gencodegenes.org/)
+-   [UCSC](https://xena.ucsc.edu/)
 
 ### USTC LaTeX
 
