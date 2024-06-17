@@ -40,6 +40,10 @@
 
 -   [Github Desktop](https://desktop.github.com/)
 
+-   [Git](https://git-scm.com/)
+
+-   [MySQL](https://www.mysql.com/cn/)
+
 -   [ImageJ](https://imagej.net/ij/docs/index.html)
 
 -   [Anaconda](https://www.anaconda.com/download/success)
@@ -50,6 +54,5 @@
 
 -   [睿克云盘](https://rec.ustc.edu.cn/download)
 
--   [Git](https://git-scm.com/)
 
 -   [Obsidian](https://obsidian.md/download)
