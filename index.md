@@ -10,7 +10,7 @@
 
 -   [R Notes](https://wanganlin00.github.io/R/)
 
--   [MedicalStatistics Notes](https://wanganlin00.github.io/MedicalStatistics/)
+-   [MedicalStatistics Notes](https://wanganlin00.github.io/MedicalBioStatistics/)
 
 -   [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
 
