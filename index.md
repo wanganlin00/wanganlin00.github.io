@@ -23,12 +23,16 @@
 ### 网站
 
 -   [USTC web VPN](https://wvpn.ustc.edu.cn/)
+
 -   [中华医学期刊全文数据框](https://www.yiigle.com/index)
+
 -   [ORCID](https://orcid.org/0009-0003-7561-3856)
+
 -   [GENCODE](https://www.gencodegenes.org/)
+
 -   [UCSC](https://xena.ucsc.edu/)
 
-### USTC LaTeX
+-   [cheatsheets](https://posit.co/resources/cheatsheets/)
 
 -   [USTC TeX Users Group](https://github.com/ustctug)
 
@@ -53,6 +57,5 @@
 -   [plink 2.0](https://www.cog-genomics.org/plink/2.0/)
 
 -   [睿克云盘](https://rec.ustc.edu.cn/download)
-
 
 -   [Obsidian](https://obsidian.md/download)
