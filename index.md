@@ -6,13 +6,15 @@
 
 -   [R for Graphics and Tables](https://wanganlin00.github.io/R4GT/)
 
--   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
+-   [R for ML](https://wanganlin00.github.io/MachineLearning/)
 
 -   [R Notes](https://wanganlin00.github.io/R/)
 
 -   [MedicalStatistics Notes](https://wanganlin00.github.io/MedicalBioStatistics/)
 
 -   [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
+
+-   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
 
 -   [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)
 
