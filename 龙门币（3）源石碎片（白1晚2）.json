@@ -1,7 +1,7 @@
 {
   "author": "wal",
   "description": "",
-  "id": 1720243920126357,
+  "id": 1720244042010434,
   "title": "3龙门币3赤金",
   "buildingType": 243,
   "planTimes": "3班",
@@ -81,7 +81,7 @@
           },
           {
             "skip": false,
-            "product": "Pure Gold",
+            "product": "Originium Shard",
             "operators": [
               "温蒂",
               "森蚺",
@@ -176,7 +176,7 @@
           {
             "skip": false,
             "operators": [
-              "艾雅法拉"
+              "伊桑"
             ],
             "sort": false,
             "autofill": false
@@ -251,7 +251,7 @@
         "manufacture": [
           {
             "skip": false,
-            "product": "Pure Gold",
+            "product": "Originium Shard",
             "operators": [
               "淬羽赫默",
               "多萝西",
@@ -273,11 +273,11 @@
           },
           {
             "skip": false,
-            "product": "Pure Gold",
+            "product": "Originium Shard",
             "operators": [
-              "火神",
-              "贝娜",
-              "泡泡"
+              "艾雅法拉",
+              "炎熔",
+              "月见夜"
             ],
             "sort": false,
             "autofill": false

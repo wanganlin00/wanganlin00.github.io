@@ -1,7 +1,7 @@
 {
   "author": "wal",
   "description": "",
-  "id": 1716702287120317,
+  "id": 1720243809713151,
   "title": "3龙门币3赤金",
   "buildingType": 243,
   "planTimes": "3班",
@@ -16,7 +16,7 @@
       },
       "drones": {
         "room": "manufacture",
-        "index": 1,
+        "index": 3,
         "enable": true,
         "order": "pre"
       },
@@ -176,7 +176,7 @@
           {
             "skip": false,
             "operators": [
-              "艾雅法拉"
+              "斥罪"
             ],
             "sort": false,
             "autofill": false
@@ -208,7 +208,7 @@
       },
       "drones": {
         "room": "manufacture",
-        "index": 1,
+        "index": 3,
         "enable": true,
         "order": "pre"
       },
@@ -275,9 +275,9 @@
             "skip": false,
             "product": "Originium Shard",
             "operators": [
-              "火神",
-              "贝娜",
-              "泡泡"
+              "艾雅法拉",
+              "炎熔",
+              "月见夜"
             ],
             "sort": false,
             "autofill": false
