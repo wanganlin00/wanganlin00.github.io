@@ -1,0 +1,9 @@
+# 忽略所有文件
+*
+
+# 不忽略 .gitignore 文件本身
+!.gitignore
+
+# 只跟踪 .qmd 和 .r 文件
+!*.qmd
+!*.r
