@@ -24,17 +24,7 @@
 
 ### 网站
 
--   [USTC web VPN](https://wvpn.ustc.edu.cn/)
-
--   [中华医学期刊全文数据框](https://www.yiigle.com/index)
-
 -   [ORCID](https://orcid.org/0009-0003-7561-3856)
-
--   [TCGA](https://portal.gdc.cancer.gov/)
-
--   [GENCODE](https://www.gencodegenes.org/)
-
--   [UCSC](https://xena.ucsc.edu/)
 
 -   [cheatsheets](https://posit.co/resources/cheatsheets/)
 
