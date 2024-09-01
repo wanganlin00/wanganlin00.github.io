@@ -4,9 +4,13 @@
 # 不忽略 .gitignore 文件本身
 !.gitignore
 
-# 只跟踪 .qmd 和 .r 文件
+# 只跟踪文件
 !*.qmd
 !*.r
+!*.md
+!*.yml
+!*.css
+
 
 # 排除目录结构
 !*/
