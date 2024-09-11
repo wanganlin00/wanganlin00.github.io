@@ -4,6 +4,8 @@
 
 ------------------------------------------------------------------------
 
+-   [Propensity Score Analysis]( https://wanganlin00.github.io/PropensityScore/)
+
 -   [R for Graphics and Tables](https://wanganlin00.github.io/R4GT/)
 
 -   [R for ML](https://wanganlin00.github.io/MachineLearning/)
