@@ -1,14 +1,15 @@
 {
   "author": "wal",
   "description": "",
-  "id": 1720243809713151,
-  "title": "2龙门币1合成玉2赤金1源石碎片",
+  "id": 1727588549535584,
+  "title": "3龙门币3赤金",
   "buildingType": 243,
   "planTimes": "3班",
   "plans": [
     {
       "name": "A白班",
-      "description": "",
+      "description": "合成玉2制造 1贸易",
+      "description_post": "菲亚梅塔给巫恋",
       "Fiammetta": {
         "enable": true,
         "target": "巫恋",
@@ -16,7 +17,7 @@
       },
       "drones": {
         "room": "manufacture",
-        "index": 3,
+        "index": 2,
         "enable": true,
         "order": "pre"
       },
@@ -70,11 +71,11 @@
           },
           {
             "skip": false,
-            "product": "Pure Gold",
+            "product": "Originium Shard",
             "operators": [
-              "苍苔",
-              "斑点",
-              "夜烟"
+              "炎熔",
+              "艾雅法拉",
+              "月见夜"
             ],
             "sort": false,
             "autofill": false
@@ -176,7 +177,7 @@
           {
             "skip": false,
             "operators": [
-              "斥罪"
+              "艾雅法拉"
             ],
             "sort": false,
             "autofill": false
@@ -193,14 +194,15 @@
       },
       "period": [
         [
-          "05:00",
-          "20:59"
+          "06:00",
+          "21:00"
         ]
       ]
     },
     {
       "name": "B夜班",
-      "description": "",
+      "description": "合成玉1制造 2贸易",
+      "description_post": "菲亚梅塔给龙舌兰",
       "Fiammetta": {
         "enable": true,
         "target": "龙舌兰",
@@ -208,7 +210,7 @@
       },
       "drones": {
         "room": "manufacture",
-        "index": 3,
+        "index": 1,
         "enable": true,
         "order": "pre"
       },
@@ -275,9 +277,9 @@
             "skip": false,
             "product": "Originium Shard",
             "operators": [
-              "艾雅法拉",
-              "炎熔",
-              "月见夜"
+              "火神",
+              "贝娜",
+              "泡泡"
             ],
             "sort": false,
             "autofill": false
@@ -392,7 +394,7 @@
         ],
         [
           "00:00",
-          "04:59"
+          "06:00"
         ]
       ]
     }

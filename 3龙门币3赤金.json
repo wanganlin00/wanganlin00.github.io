@@ -1,14 +1,15 @@
 {
   "author": "wal",
   "description": "",
-  "id": 1720243920126357,
+  "id": 1727588514743989,
   "title": "3龙门币3赤金",
   "buildingType": 243,
   "planTimes": "3班",
   "plans": [
     {
       "name": "A白班",
-      "description": "",
+      "description": "柏喙",
+      "description_post": "菲亚梅塔给巫恋",
       "Fiammetta": {
         "enable": true,
         "target": "巫恋",
@@ -193,14 +194,15 @@
       },
       "period": [
         [
-          "05:00",
-          "20:59"
+          "06:00",
+          "21:00"
         ]
       ]
     },
     {
       "name": "B夜班",
-      "description": "",
+      "description": "卡夫卡",
+      "description_post": "菲亚梅塔给龙舌兰",
       "Fiammetta": {
         "enable": true,
         "target": "龙舌兰",
@@ -392,7 +394,7 @@
         ],
         [
           "00:00",
-          "04:59"
+          "06:00"
         ]
       ]
     }
