@@ -4,17 +4,17 @@
 
 ------------------------------------------------------------------------
 
--   [Propensity Score Analysis]( https://wanganlin00.github.io/PropensityScore/)
+-   [Blog](https://wanganlin00.github.io/Blog/)
+
+-   [R Notes](https://wanganlin00.github.io/R/)
 
 -   [R for Graphics and Tables](https://wanganlin00.github.io/R4GT/)
 
 -   [R for ML](https://wanganlin00.github.io/MachineLearning/)
 
--   [R Notes](https://wanganlin00.github.io/R/)
-
 -   [MedicalStatistics Notes](https://wanganlin00.github.io/MedicalBioStatistics/)
 
--   [BioProtocols Notes](https://wanganlin00.github.io/BioProtocols/)
+-   [Propensity Score Analysis](https://wanganlin00.github.io/PropensityScore/)
 
 -   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
 
