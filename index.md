@@ -36,6 +36,8 @@
 
 -   [USTC Beamer 模板](https://github.com/ustctug/ustcbeamer)
 
+-   [WPS 云端试剂和仪器档案](https://www.kdocs.cn/l/cjNW9DYRcVey)
+
 ## 软件
 
 -   [Github Desktop](https://desktop.github.com/)
