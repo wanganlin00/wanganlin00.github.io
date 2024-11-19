@@ -4,9 +4,7 @@
 
 ------------------------------------------------------------------------
 
--   [Blog](https://wanganlin00.github.io/Blog/)
-
--   [R Notes](https://wanganlin00.github.io/R/)
+-   [R data science](https://wanganlin00.github.io/RDataScience/)
 
 -   [R for Graphics and Tables](https://wanganlin00.github.io/R4GT/)
 
