@@ -4,22 +4,24 @@
 
 ------------------------------------------------------------------------
 
+::::: two-column
+<div>
 
--   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
+-   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)\
+-   [MedicalStatistics Notes](https://wanganlin00.github.io/MedicalBioStatistics/)\
+-   [Blog](https://wanganlin00.github.io/Blog/)\
 
--   [MedicalStatistics Notes](https://wanganlin00.github.io/MedicalBioStatistics/)
+</div>
 
--   [Blog](https://wanganlin00.github.io/Blog/)
+<div>
 
--   [R data science](https://wanganlin00.github.io/RDataScience/)
+-   [R data science](https://wanganlin00.github.io/RDataScience/)\
+-   [R for Graphics and Tables](https://wanganlin00.github.io/R4GT/)\
+-   [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)\
+-   [R for ML](https://wanganlin00.github.io/MachineLearning/)\
 
--   [R for Graphics and Tables](https://wanganlin00.github.io/R4GT/)
-
--   [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)
-
--   [R for ML](https://wanganlin00.github.io/MachineLearning/)
-
-
+</div>
+:::::
 
 ## 🐍 References
 
