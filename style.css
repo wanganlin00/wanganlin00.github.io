@@ -13,19 +13,3 @@ h1, .h1, h2, .h2, h3, .h3 {
   animation: shake 4s cubic-bezier(.36,.07,.19,.97) infinite;
   transform: translate3d(0, 0, 0);
 }
-
-
-/* 两列布局样式 */
-.two-column {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.two-column > div {
-    flex: 1 1 calc(50% - 20px); /* 每列占50%，减去间距 */
-    background-color: #f9f9f9;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
