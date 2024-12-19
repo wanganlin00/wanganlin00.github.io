@@ -15,14 +15,17 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 
+/* 两列布局样式 */
 .two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
+
 .two-column > div {
-    padding: 10px;
+    flex: 1 1 calc(50% - 20px); /* 每列占50%，减去间距 */
     background-color: #f9f9f9;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
 }
