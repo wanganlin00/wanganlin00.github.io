@@ -3,6 +3,9 @@ title: HomePage
 url: https://wanganlin00.github.io/
 description: 每个人的自由发展是一切人自由发展的条件
 
+
+show_dir_listing: BOOL
+
 author:
   name: "WANG，ANLIN"
   # email: "你的邮箱"
