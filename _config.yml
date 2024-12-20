@@ -1,24 +1,7 @@
-theme: jekyll-theme-minimal
 title: HomePage
 url: https://wanganlin00.github.io/
 description: 每个人的自由发展是一切人自由发展的条件
 
-
-show_dir_listing: BOOL
-
-author:
-  name: "WANG，ANLIN"
-  # email: "你的邮箱"
-show_downloads: false
-paginate: 5  # 每页显示的文章数
-
-
+remote_theme: pages-themes/leap-day@v0.2.0
 plugins:
-  - jekyll-feed  # RSS订阅
-  - jekyll-sitemap  # 网站地图
-  - jekyll-seo-tag  # SEO优化
-  
- 
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
