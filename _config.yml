@@ -1,4 +1,16 @@
 theme: jekyll-theme-minimal
 title: HomePage
+url: https://wanganlin00.github.io/
 description: 每个人的自由发展是一切人自由发展的条件
+
+author:
+  name: "WANG，ANLIN"
+  # email: "你的邮箱"
 show_downloads: false
+paginate: 5  # 每页显示的文章数
+
+
+plugins:
+  - jekyll-feed  # RSS订阅
+  - jekyll-sitemap  # 网站地图
+  - jekyll-seo-tag  # SEO优化
