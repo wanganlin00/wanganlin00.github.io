@@ -14,3 +14,8 @@ plugins:
   - jekyll-feed  # RSS订阅
   - jekyll-sitemap  # 网站地图
   - jekyll-seo-tag  # SEO优化
+  
+ 
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
