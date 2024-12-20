@@ -22,12 +22,6 @@
 
 -   [cheatsheets](https://posit.co/resources/cheatsheets/)
 
--   [USTC TeX Users Group](https://github.com/ustctug)
-
--   [LaTeX template for USTC thesis](https://github.com/ustctug/ustcthesis)
-
--   [USTC Beamer 模板](https://github.com/ustctug/ustcbeamer)
-
 -   [WPS 云端试剂和仪器档案](https://www.kdocs.cn/l/cjNW9DYRcVey)
 
 ## 软件
@@ -43,7 +37,5 @@
 -   [Anaconda](https://www.anaconda.com/download/success)
 
 -   [3D slicer](https://www.slicer.org/)
-
--   [睿克云盘](https://rec.ustc.edu.cn/download)
 
 -   [Obsidian](https://obsidian.md/download)
