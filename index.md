@@ -12,15 +12,10 @@
 -   [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)
 -   [R for ML](https://wanganlin00.github.io/MachineLearning/)
 
-## 🐍 References
 
-------------------------------------------------------------------------
-
-### 网站
+## 网站
 
 -   [ORCID](https://orcid.org/0009-0003-7561-3856)
-
--   [cheatsheets](https://posit.co/resources/cheatsheets/)
 
 -   [WPS 云端试剂和仪器档案](https://www.kdocs.cn/l/cjNW9DYRcVey)
 
