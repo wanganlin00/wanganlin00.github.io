@@ -4,13 +4,13 @@
 
 ------------------------------------------------------------------------
 
--   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)\
--   [MedicalStatistics Notes](https://wanganlin00.github.io/MedicalBioStatistics/)\
--   [Blog](https://wanganlin00.github.io/Blog/)\
--   [R data science](https://wanganlin00.github.io/RDataScience/)\
--   [R for Graphics and Tables](https://wanganlin00.github.io/R4GT/)\
--   [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)\
--   [R for ML](https://wanganlin00.github.io/MachineLearning/)\
+-   [Bioinformatics Notes](https://wanganlin00.github.io/Bioinformatics/)
+-   [MedicalStatistics Notes](https://wanganlin00.github.io/MedicalBioStatistics/)
+-   [Blog](https://wanganlin00.github.io/Blog/)
+-   [R data science](https://wanganlin00.github.io/RDataScience/)
+-   [R for Graphics and Tables](https://wanganlin00.github.io/R4GT/)
+-   [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)
+-   [R for ML](https://wanganlin00.github.io/MachineLearning/)
 
 ## 🐍 References
 
