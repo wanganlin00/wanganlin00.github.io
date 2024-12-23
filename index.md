@@ -19,6 +19,8 @@
 
 -   [WPS 云端试剂和仪器档案](https://www.kdocs.cn/l/cjNW9DYRcVey)
 
+-   [WPS 云端细胞系和动物品系清单](https://kdocs.cn/l/cnOOuuujMby4)
+
 ## 软件
 
 -   [Github Desktop](https://desktop.github.com/)
