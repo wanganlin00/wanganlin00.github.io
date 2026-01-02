@@ -19,16 +19,8 @@ language = en
 
 ```{r}
 options(timeout = 300)
-options("timeout")
-# set a CRAN mirror
-
 options(repos = c(CRAN = "https://cran.rstudio.com/")) # "https://mirrors.ustc.edu.cn/CRAN/"
 options(BioC_mirror = "https://mirrors.tuna.tsinghua.edu.cn/bioconductor")
-
-
-options("repos")
-options("BioC_mirror")
-
 
 .First <- function() {
     library(showtext, quietly = T)
@@ -44,15 +36,11 @@ options("BioC_mirror")
     library(tidyverse)
     library(conflicted)
     conflict_scout()
-    conflicts_prefer(GenomicRanges::setdiff)
-    conflicts_prefer(dplyr::filter)
-    conflicts_prefer(dplyr::select)
     library(readxl)
     library(writexl)
     # library(data.table)
     library(BiocManager)
 }
-
 
 .Last <- function() {
     now()
