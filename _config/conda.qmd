@@ -1,0 +1,81 @@
+---
+title: "conda"
+date: "2024-11-01"
+date-modified: today
+categories: [config]
+execute: 
+  eval: false
+---
+
+<https://conda.io/projects/conda/en/latest/user-guide/getting-started.html> <https://docs.anaconda.com>
+
+miniconda内置包不全，没有anaconda方便
+
+## conda环境管理
+
+```{r}
+library(reticulate)
+# 查看当前可用conda环境
+conda_list()
+py_config(
+```
+
+```{r}
+use_condaenv(condaenv = "base", required = TRUE)
+
+
+conda_create(envname = "r-reticulate") 
+conda_install(envname = "base", packages = c("polars"))
+```
+
+```{r}
+conda_remove(envname = "r-reticulate")
+conda_clone()
+conda_export()
+conda_update()
+conda_version() # conda版本信息
+```
+
+## conda/pip安装
+
+```{r}
+py_module_available("pip")
+py_module_available("numpy")
+py_module_available("polars")
+```
+
++------------------------------------------------------------------------------+
+| ***pip \<command\> \[options\]***                                            |
++==============================================================================+
+| pip install \<module\>                                                       |
+|                                                                              |
+| pip install SpeechRecognition -i <https://pypi.tuna.tsinghua.edu.cn/simple/> |
++------------------------------------------------------------------------------+
+| pip uninstall \<module\>                                                     |
++------------------------------------------------------------------------------+
+| pip list                                                                     |
++------------------------------------------------------------------------------+
+| pip --version pip -V                                                         |
++------------------------------------------------------------------------------+
+| python -m pip install --upgrade pip                                          |
++------------------------------------------------------------------------------+
+
+## 调用Python
+
+```{r}
+# python脚本
+py_run_file("helloworld.py")
+
+source_python("helloworld.py")
+```
+
+```{r}
+# Python 交互
+reticulate::repl_python()
+```
+
+```{r}
+pl <- import("polars")
+
+pl$read_clipboard()
+```

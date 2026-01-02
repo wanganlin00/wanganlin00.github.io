@@ -1,0 +1,26 @@
+---
+title: ".gitignore"
+date: "2024-11-01"
+date-modified: today
+categories: [config]
+---
+
+---
+# 忽略所有文件
+*
+
+# 不忽略 .gitignore 文件本身
+!.gitignore
+
+# 只跟踪文件
+!*.qmd
+!*.r
+!*.md
+!*.yml
+!*.css
+!*.json
+
+# 跟踪目录下的文件
+
+!*/
+---

@@ -1,0 +1,62 @@
+---
+title: "安装R包和更新RGui"
+date: "2024-10-01"
+date-modified: today
+categories: [config, R]
+execute: 
+  eval: false
+---
+
+## 更新 RGui
+
+```{r}
+# 在RGui中执行
+installr::updateR()
+```
+
+按流程执行
+
+## 安装R包
+
+```{r}
+tools <- c(
+  "installr", "pak", "devtools","remotes","conflicted", "reticulate", "BiocManager","knitr","renv","pak","rig")
+
+
+lapply(tools, install.packages)
+
+necessary <- c(
+  "tidyverse", "tidymodels", "readxl", "writexl","arrow", "data.table",
+  "survminer","ggsurvfit",
+)
+
+# remotes::install_github("jbryer/psa", build_vignettes = TRUE, dependencies = "Enhances")
+
+optional <- c(
+  "ggpubr","pROC", "ggprism", "ggpattern", 
+  "pheatmap", "ggfortify", "ggrepel", "ggthemes","ggcorrplot", "ggpmisc", "ggforce",
+  "ggraph", "tidygraph", "svglite","plotly",
+  
+  
+  "gt", "gtsummary", "tableone", "flextable",
+)
+
+
+
+```
+
+### 安装路径
+
+```{r}
+.libPaths()
+
+#> [1] "C:/Users/DELL/AppData/Local/R/win-library/4.4" "D:/R-4.4.1/library"  
+#.libPaths(c("/envs/新路径", .libPaths()))
+```
+
+如果希望永久删除安装路径，可以直接编辑R的环境配置文件（例如 .Renviron），去掉相应的路径条目，然后重启R使更改生效。
+
+```{r}
+.libPaths(.libPaths()[.libPaths() != "C:/Users/DELL/AppData/Local/R/win-library/4.4"])
+.libPaths()
+```

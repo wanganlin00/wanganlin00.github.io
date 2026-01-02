@@ -1,0 +1,44 @@
+## 终端
+
+```         
+查看版本
+quarto -v
+```
+
+查看附加工具
+
+```         
+quarto list tools
+```
+
+#### TinyTex pdf
+
+[A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live](https://yihui.org/tinytex/)
+
+```         
+quarto install tinytex 
+quarto update tinytex
+```
+
+```{r}
+# CRAN version
+install.packages('tinytex')
+
+# or the development version on GitHub
+# remotes::install_github('rstudio/tinytex')
+
+```
+
+#### 添加到环境变量
+
+```         
+quarto install tinytex --update-path
+```
+
+#### Chromium html
+
+```         
+quarto install Chromium
+
+quarto update Chromium
+```
