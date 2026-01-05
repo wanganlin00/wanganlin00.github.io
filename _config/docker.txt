@@ -1,0 +1,31 @@
+PowerShall 以管理员身份运行
+PS C:\WINDOWS\system32>
+
+wsl --install
+wsl.exe --list --online
+wsl.exe --install <Distro>
+wsl --status
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart         # 启动“Windows 子系统 Linux”
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart                                # 启动'虚拟化"可选功能
+wsl -l -v         
+
+# 下载AMD64版本 https://www.docker.com/products/docker-desktop/
+# 重启
+docker -v
+
+
+# 汉化https://github.com/asxez/DockerDesktop-CN
+Windows下默认为C:\Program Files\Docker\Docker\frontend\resources
+
+
+# Docker Desktop
+docker volume create n8n_data
+docker run -it --rm \
+ --name n8n \
+ -p 5678:5678 \
+ -e GENERIC_TIMEZONE="<YOUR_TIMEZONE>" \
+ -e TZ="<YOUR_TIMEZONE>" \
+ -e N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true \
+ -e N8N_RUNNERS_ENABLED=true \
+ -v n8n_data:/home/node/.n8n \
+ docker.n8n.io/n8nio/n8n
