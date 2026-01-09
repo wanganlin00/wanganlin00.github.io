@@ -5,6 +5,8 @@ date-modified: today
 categories: [config]
 ---
 
+<https://git-scm.com/docs/gitignore/zh_HANS-CN>
+
 ---
 # 忽略所有文件
 *
@@ -24,3 +26,7 @@ categories: [config]
 
 !*/
 ---
+
+`hello.*` 匹配名称以 `hello.` 开头的任何文件或目录
+
+`/hello.*`可匹配 hello.txt 和 hello.c 但不匹配 a/hello.java。
