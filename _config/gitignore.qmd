@@ -1,0 +1,36 @@
+---
+title: ".gitignore"
+date: "2024-11-01"
+date-modified: today
+categories: [config]
+---
+
+<https://git-scm.com/docs/gitignore/zh_HANS-CN>
+
+---
+# 忽略所有文件
+*
+
+# 不忽略 .gitignore 文件本身
+!.gitignore
+
+# 只跟踪文件
+!*.qmd
+!*.r
+!*.md
+!*.yml
+!*.css
+!*.json
+
+# 跟踪目录下的文件
+
+!*/
+---
+
+`hello.*` 匹配名称以 `hello.` 开头的任何文件或目录（子目录）
+
+`/hello.*`可匹配当前目录 hello.txt 和 hello.c 但不匹配 a/hello.java 。
+
+ `foo/` 将匹配目录 `foo` 及其下的路径，但不会匹配常规文件
+
+`doc/frotz` 和 `/doc/frotz` 模式在任何 .gitignore 文件中都有同样的效果

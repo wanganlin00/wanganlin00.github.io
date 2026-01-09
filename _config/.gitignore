@@ -1,5 +1,0 @@
-# 不跟踪文件
-
-gitignore.qmd
-hello.*
-/hello.*
