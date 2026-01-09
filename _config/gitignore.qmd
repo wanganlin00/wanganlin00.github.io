@@ -30,7 +30,7 @@ categories: [config]
 !*.css
 !*.json
 
-# 跟踪目录下的文件
+# 跟踪所有目录
 
 !*/
 ---
