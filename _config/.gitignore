@@ -1,3 +1,5 @@
 # 不跟踪文件
 
-.gitignore.qmd
+gitignore.qmd
+hello.*
+/hello.*
