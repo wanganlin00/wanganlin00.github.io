@@ -7,6 +7,14 @@ categories: [config]
 
 <https://git-scm.com/docs/gitignore/zh_HANS-CN>
 
+星号 "`*`" 匹配斜线以外的任何字符。
+
+字符 "`?`" 匹配除 "`/`" 以外的任何一个字符。
+
+范围符号，如 "\[`a-zA-Z`\]"，可用于匹配范围中的一个字符。
+
+"`**/foo`"匹配任何文件或目录的"foo"，与模式"`foo`"相同
+
 ---
 # 忽略所有文件
 *
@@ -29,8 +37,8 @@ categories: [config]
 
 `hello.*` 匹配名称以 `hello.` 开头的任何文件或目录（子目录）
 
-`/hello.*`可匹配当前目录 hello.txt 和 hello.c 但不匹配 a/hello.java 。
+`/hello.*`可匹配当前目录 hello.txt 和 hello.c 但不匹配子目录a/hello.java 。
 
- `foo/` 将匹配目录 `foo` 及其下的路径，但不会匹配常规文件
+ `foo/` 将匹配目录 `foo` 及其下的路径，包括 `a/foo/` 子目录，不匹配文件
 
 `doc/frotz` 和 `/doc/frotz` 模式在任何 .gitignore 文件中都有同样的效果
