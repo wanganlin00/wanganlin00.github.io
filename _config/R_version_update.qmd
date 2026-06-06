@@ -1,0 +1,51 @@
+---
+title: "R版本更新"
+date: "2026-5-5"
+date-modified: today
+categories: [config, R]
+execute: 
+  eval: false
+---
+
+## R版本更新
+
+```{r}
+# 在RGui中执行
+installr::updateR()
+```
+
+![](images/update.png){fig-align="center" width="50%"}
+
+### 安装RGui
+
+![](images/information.png){fig-align="center" width="50%"}
+
+![](images/install_new_R%20.png){fig-align="center" width="50%"}
+
+### 迁移R包 
+
+![](images/copy_R_packages_in_old_version.png){fig-align="center" width="50%"} ![](images/erase_R_packages_in_old_version.png){fig-align="center" width="50%"}
+
+### Rprofile/Renviron
+
+![](images/clipboard-593926832.png)
+
+### Rstudio -\> Tools -\> Global Options -\>General
+
+![](images/options.png){fig-align="center" width="75%"}
+
+### Rconsole
+
+```         
+## Language for messages
+language = 
+```
+
+↓
+
+```         
+## Language for messages
+language = en
+```
+
+## Rstudio更新

@@ -39,6 +39,6 @@ categories: [config]
 
 `/hello.*`可匹配当前目录 hello.txt 和 hello.c 但不匹配子目录a/hello.java 。
 
- `foo/` 将匹配目录 `foo` 及其下的路径，包括 `a/foo/` 子目录，不匹配文件
+`foo/`将匹配目录`foo`及其下的路径，包括 `a/foo/` 子目录，不匹配文件
 
 `doc/frotz` 和 `/doc/frotz` 模式在任何 .gitignore 文件中都有同样的效果
