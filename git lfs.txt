@@ -1,0 +1,7 @@
+Git bash
+
+ git lfs install
+
+cd E:/_Github/Clinical
+
+git lfs track ".pdf"
