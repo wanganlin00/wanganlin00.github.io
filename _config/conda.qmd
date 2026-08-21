@@ -17,7 +17,7 @@ miniconda内置包不全，没有anaconda方便
 library(reticulate)
 # 查看当前可用conda环境
 conda_list()
-py_config(
+py_config()
 ```
 
 ```{r}
