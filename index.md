@@ -6,7 +6,7 @@
 -   [Big Data in R](https://wanganlin00.github.io/Big-data-in-R/)
 -   [MedicalBioStatistics](https://wanganlin00.github.io/MedicalBioStatistics/)
 -   [Meta Analysis with R](https://wanganlin00.github.io/MetaAnalysis/)
--   [Propensity Score/](https://wanganlin00.github.io/PropensityScore/)
+# -   [Propensity Score/](https://wanganlin00.github.io/PropensityScore/)
 -   [R for Graphics and Tables](https://wanganlin00.github.io/R4GT/)
 -   [R data science](https://wanganlin00.github.io/RDataScience/)
 -   [Python Data Science Notes](https://wanganlin00.github.io/PythonDataScience/)
